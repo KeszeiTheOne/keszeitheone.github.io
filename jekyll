@@ -1,0 +1,7 @@
+export JEKYLL_VERSION=4
+docker run --rm \
+  --publish [::1]:4000:4000 \
+  --volume="$PWD:/srv/jekyll" \
+  --volume="$PWD/vendor/bundle:/usr/local/bundle" \
+  -it jekyll/jekyll:$JEKYLL_VERSION \
+  jekyll $1
