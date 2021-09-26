@@ -23,5 +23,11 @@ Ami nem tetszett benne, hogy mindig újra kellett generálni az elkészített ht
 Nézegettem tovább, ugyan abban a csoport bejegyzésben valaki ajánlotta a [jekyll](https://jekyllrb.com/){:target="_blank"} eszközt.
 Egyszerű bejegyzés kezelése van, template kezelés is van benne. Tökéletes, hogy kezdjünk bele?
 
+A `jekyll` nagyon jól van dokumentálva és az alapokat nagyon egyszerűen meg lehet tanulni a [step-by-step]{https://jekyllrb.com/docs/step-by-step/01-setup/} leírásból.
+
+
+
+
 Ismerkedjünk meg magával a template kezeléssel.
 A `jekyll` egy `liquid` nevezetű template kezelőt használ ami elég sok aspektusban hasonlít a `twig`-re.
+
