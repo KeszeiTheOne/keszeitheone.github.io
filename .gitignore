@@ -66,3 +66,8 @@ build-iPhoneSimulator/
 # .rubocop-https?--*
 
 # End of https://www.toptal.com/developers/gitignore/api/jekyll,ruby
+
+# Yarn
+
+_vendor/*
+yarn-error.log
