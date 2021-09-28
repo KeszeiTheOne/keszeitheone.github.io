@@ -1,0 +1,13 @@
+{
+  "name": "keszei",
+  "version": "1.0.0",
+  "description": "Keszei blog",
+  "main": "index.js",
+  "repository": "git@github.com:KeszeiTheOne/keszeitheone.github.io.git",
+  "author": "Balazs Keszei <kebalazs95@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "bootstrap": "4"
+  }
+}
