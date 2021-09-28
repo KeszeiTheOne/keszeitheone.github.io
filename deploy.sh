@@ -54,7 +54,7 @@ fi
 echo -e "\nDeploying into ${BRANCH} branch:"
 rm -rf *
 cp -R ${TEMP}/_site/* .
-rm -f README.md
+rm -f README.md deploy.sh jekyll package.json yarn.lock .gitignore
 git add .
 git commit -am "new version $(date)" --allow-empty
 git push origin ${BRANCH} 2>&1 | sed 's|'$URL'|[skipped]|g'
