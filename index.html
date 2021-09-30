@@ -1,0 +1,12 @@
+---
+my_number: 5
+layout: default
+title: Főoldal
+---
+
+{% for post in site.posts %}
+  <div class="d-flex flex-column">
+    <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+    <span>{{ post.excerpt }}</span>
+  </div>
+{% endfor %}
