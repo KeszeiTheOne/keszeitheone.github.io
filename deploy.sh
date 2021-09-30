@@ -26,9 +26,13 @@ rm -rf _site
 
 if [ -r ${DEPLOY_CONFIG} ]; then
   yarn install
+  bundle config set --local path 'vendor/bundle'
+  bundle install
   ${BUNDLE} jekyll build --config _config.yml,${DEPLOY_CONFIG} ${DRAFTS}
 else
   yarn install
+  bundle config set --local path 'vendor/bundle'
+  bundle install
   ${BUNDLE} jekyll build ${DRAFTS}
 fi
 
