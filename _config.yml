@@ -22,3 +22,9 @@ sass:
   load_paths:
     - _sass
     - _vendor/bootstrap
+
+kramdown:
+  syntax_highlighter: coderay
+  syntax_highlighter_opts:
+    line_numbers: table
+    bold_every: 5
