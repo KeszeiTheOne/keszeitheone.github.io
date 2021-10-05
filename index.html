@@ -7,6 +7,6 @@ title: Főoldal
 {% for post in site.posts %}
   <div class="d-flex flex-column">
     <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-    <span>{{ post.excerpt }}</span>
+    <span>{{ post.excerpt | strip_html }}</span>
   </div>
 {% endfor %}

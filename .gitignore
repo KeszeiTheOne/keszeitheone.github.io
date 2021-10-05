@@ -71,3 +71,4 @@ build-iPhoneSimulator/
 
 _vendor/*
 yarn-error.log
+.idea
