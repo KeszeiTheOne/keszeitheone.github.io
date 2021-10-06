@@ -1,7 +1,7 @@
 ---
+title: 'Építsd magad #3 - Deploy'
 layout: post
 author: keszei
-title: "Építsd magad #3 - Deploy"
 ---
 
 ## Van egy projektem, király, hogyan lehet kirakni valahová, hogy olvassák mások is? ##
@@ -31,6 +31,6 @@ Kiadás elött feltelepítem a függőségeket valamint le buildeli a script az 
 
 Ezzel a scripttel már kész is vagyok elég egyszerűen ki lehet adni a blogot. Viszont egy gond van vele, ami nem is akkora gond. 
 Mindenképpen kell hozzá egy gazdagép ahol kellenek ezek a különböző függőségek amikkel ki lehet rakni a blogot. Gondolok itt arra, hogy 
-a gazdagépnek rendelkeznie kell a következőkkel: `git`, `gem`, `bundle`, `yarn`. A jövőben kitudja, hogy még milyen csodákkal 
+a gazdagépnek rendelkeznie kell a következőkkel: `git`, `gem`, `bundle`, `yarn`.  A jövőben kitudja, hogy még milyen csodákkal 
 lesz még tele pakolva ez a blog. Így a jövőben ezt is lehet majd optimalizálni, hogy csak egy gomb nyomás legyen valahol és már a deploy script 
 kirakja a legfrissebb változatát a blognak.

@@ -9,12 +9,17 @@
     {% seo %}
   </head>
   <body>
+
     <div class="container blog-header text-center pb-3 pt-3">
-      <h1>Keszei Blog</h1>
+      <a href="/">
+        <h1>Keszei Blog</h1>
+      </a>
     </div>
-    <div class="container">
+    <div class="container p-4">
       {% include navigation.html %}
-      {{ content }}
+      <div class="p-md-4 pb-4 pt-4">
+        {{ content }}
+      </div>
     </div>
   </body>
 </html>

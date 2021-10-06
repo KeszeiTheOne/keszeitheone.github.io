@@ -1,6 +1,6 @@
 $azure: #0778f7;
-$azure-ligth: #1A82F6;
-$azure-ligther: #4A99F2;
+$azure-light: #1A82F6;
+$azure-lighter: #4A99F2;
 $azure-dark: #025ABD;
 $azure-darker: #02438C;
 
@@ -19,4 +19,6 @@ $brown: #B0A48A;
 
 $body-bg: $missingmom;
 
-$primary: $color-green;
+$primary: $azure-light;
+
+$font-family-base: 'Poppins', sans-serif;

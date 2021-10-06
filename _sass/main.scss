@@ -8,5 +8,15 @@
 
 .blog-header {
 	background-color: $swirly-sky-blue;
-	color: $missingmom;
+	
+	a {
+		text-decoration: none;
+
+		h1 {
+			color: $missingmom;
+		}
+	}
+
 }
+
+@import "posts";

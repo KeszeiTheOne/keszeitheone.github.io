@@ -1,0 +1,47 @@
+@font-face {
+    font-family: 'Poppins';
+    //src: url('fontname.eot');
+    src: url('fonts/poppins/Poppins-Regular.ttf') format('truetype')
+         //url('fontname.eot?#iefix') format('embedded-opentype'),
+         //url('fontname.woff') format('woff'),
+         //url('fontname.ttf') format('truetype'),
+         //url('fontname.svg#fontname') format('svg')
+         ;
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('fonts/poppins/Poppins-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('fonts/poppins/Poppins-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('fonts/poppins/Poppins-ExtraBold.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('fonts/poppins/Poppins-ExtraBoldItalic.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('fonts/poppins/Poppins-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}

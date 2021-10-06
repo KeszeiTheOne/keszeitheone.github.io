@@ -5,7 +5,7 @@ title: Főoldal
 ---
 
 {% for post in site.posts %}
-  <div class="d-flex flex-column">
+  <div class="d-flex flex-column pb-4">
     <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
     <span>{{ post.excerpt | strip_html }}</span>
   </div>

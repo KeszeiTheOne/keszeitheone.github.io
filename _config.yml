@@ -21,7 +21,7 @@ defaults:
 sass:
   load_paths:
     - _sass
-    - _vendor/bootstrap
+    - _vendor
 
 kramdown:
   syntax_highlighter: coderay
@@ -33,3 +33,6 @@ plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo-tag
+
+jekyll_admin:
+  homepage: "drafts"

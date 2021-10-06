@@ -1,0 +1,12 @@
+.post-container {
+font-family: 'Poppins', sans-serif;
+  img {
+    @extend .img-fluid;
+    @extend .rounded;
+    @extend .mx-auto;
+    @extend .d-block;
+
+    border: 1px solid black;
+  }
+
+}
