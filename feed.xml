@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.1">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2021-11-28T17:10:46+01:00</updated><id>/feed.xml</id><entry><title type="html">Építsd magad #3 - Deploy</title><link href="/2021/11/28/epitsd_magad_3.html" rel="alternate" type="text/html" title="Építsd magad #3 - Deploy" /><published>2021-11-28T00:00:00+01:00</published><updated>2021-11-28T00:00:00+01:00</updated><id>/2021/11/28/epitsd_magad_3</id><content type="html" xml:base="/2021/11/28/epitsd_magad_3.html">&lt;h2 id=&quot;van-egy-projektem-király-hogyan-lehet-kirakni-valahová-hogy-olvassák-mások-is&quot;&gt;Van egy projektem, király, hogyan lehet kirakni valahová, hogy olvassák mások is?&lt;/h2&gt;
+
+&lt;p&gt;A &lt;code&gt;jekyll&lt;/code&gt; az elkészített markdown vagy html fájlokat nagyon egyszerűen betudja forgatni a végső source kódba amit már bárhová feltudunk rakni.&lt;/p&gt;
+
+&lt;p&gt;Csak egyszerűen meghívjuk parancssorba a következőt:&lt;/p&gt;
+
+&lt;div class=&quot;language-shell highlighter-coderay&quot;&gt;&lt;table class=&quot;CodeRay&quot;&gt;&lt;tr&gt;
+  &lt;td class=&quot;line-numbers&quot;&gt;&lt;pre&gt;&lt;a href=&quot;#n1&quot; name=&quot;n1&quot;&gt;1&lt;/a&gt;
+&lt;/pre&gt;&lt;/td&gt;
+  &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;bundle exec jekyll build
+&lt;/pre&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+
+&lt;p&gt;A végrahajtás után már rendelkezésünkre is áll a &lt;code&gt;_site&lt;/code&gt; mappában a felépített weboldalunk. Ezt már bárhová ki lehetne rakni.&lt;/p&gt;
+
+&lt;p&gt;Nekem legelső sorban a github pages-re esett a választásom, de a jövőben biztosan át térek valami más szolgáltatóhoz.&lt;/p&gt;
+
+&lt;p&gt;Viszont itt is meg kell odalni a kiadást. 
+A legegyszerűbb módja, hogy a github repository-ban ahová toljuk fel a jekyll kódunkat, abban beállítjuk, hogy a master-ből készítsen egy github pages oldalt.
+Szerencsére a github felismeri a jekyll-t és autómatikusan le build-eli nekünk a source kódott.
+Viszont ezzel egy gond van. Csak a jekyll build-et futtatja és az egyéb függőségeket pedig nem. &lt;a href=&quot;/2021/09/30/epitsd_magad_2.html&quot;&gt;Korábban&lt;/a&gt;
+a bootstrap-et külön függőségnek telepítettem fel a bloghoz, így kiadáskor annak is le kell futnia.&lt;/p&gt;
+
+&lt;p&gt;A legjobb megoldás az lett, hogy egy külön git branch-be fordítom le a master-ben lévő jekyll kódott. Ehhez találtam egy deploy scripttet, ami megkönnyíti a kiadást.
+Kiadás elött feltelepítem a függőségeket valamint le buildeli a script az oldalt egy külön branch-be a fájlokat.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/KeszeiTheOne/keszeitheone.github.io/blob/master/deploy.sh&quot; target=&quot;_blank&quot;&gt;Itt&lt;/a&gt; meg is lehet tekinteni ezt a deploy scripttet ha érdekel.&lt;/p&gt;
+
+&lt;p&gt;Ezzel a scripttel már kész is vagyok elég egyszerűen ki lehet adni a blogot. Viszont egy gond van vele, ami nem is akkora gond. 
+Mindenképpen kell hozzá egy gazdagép ahol kellenek ezek a különböző függőségek amikkel ki lehet rakni a blogot. Gondolok itt arra, hogy 
+a gazdagépnek rendelkeznie kell a következőkkel: &lt;code&gt;git&lt;/code&gt;, &lt;code&gt;gem&lt;/code&gt;, &lt;code&gt;bundle&lt;/code&gt;, &lt;code&gt;yarn&lt;/code&gt;.  A jövőben kitudja, hogy még milyen csodákkal 
+lesz még tele pakolva ez a blog. Így a jövőben ezt is lehet majd optimalizálni, hogy csak egy gomb nyomás legyen valahol és már a deploy script 
+kirakja a legfrissebb változatát a blognak.&lt;/p&gt;</content><author><name>keszei</name></author><summary type="html">Van egy projektem, király, hogyan lehet kirakni valahová, hogy olvassák mások is?</summary></entry><entry><title type="html">Olympos</title><link href="/2021/11/28/olympos.html" rel="alternate" type="text/html" title="Olympos" /><published>2021-11-28T00:00:00+01:00</published><updated>2021-11-28T00:00:00+01:00</updated><id>/2021/11/28/olympos</id><content type="html" xml:base="/2021/11/28/olympos.html">&lt;p&gt;Mikor OKJ-s időszakban voltam utolsó éves, a szakdogámat kellett írnom.&lt;/p&gt;
+
+&lt;p&gt;Egy nagyon jó ötletnek tűnő alkalmazás volt. Egy sport versenyt lebonyolító szoftver. Nagy ambiciókkal álltam neki ennek a projektnek. Volt egy kezdetleges alkalmazás amit apám írt egy kempo verseny lebonyolítására. Innen is jött anno az ötlet.  Csak a vizsgára már annyira bonyolult lett, hogy még én magam is belefáradtam.&lt;/p&gt;
+
+&lt;p&gt;Erre a projektre csináltattam egy tök jó logót is, mert a jövőben ezzel a szoftverrel szerettem volna házalni is.
+&lt;img src=&quot;/assets/images/olympos/logo.png&quot; alt=&quot;Olympos logó&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Annak ellenére, hogy milyen körülményes volt ennek a szoftvernek a megírása a bonyolultsága miatt, mindig is volt egy lelkesedés arra, hogy én ezt a projektett újra fel élesszem. Rengetegszer ültem le elé, hogy oké én most neki állok újra megírni az egészet előlről. Rengetegszer már a kezdetén kifujt a lelkesedés. Mindig olyan falakba ütköztem, ami türelemmel kivédhető lett volna.&lt;/p&gt;
+
+&lt;p&gt;A napokban is fel lendült bennem ez a lelkesedés, már napok óta gondolkoztam rajta, hogy nah ha legközelebb lesz rá szabadidőm, na akkor neki ülök és meg nem állok. Fejben meg is voltak a kezdeti lépések, hogy mit is hogyan kezdjek neki. Mai fejjel sokkal nagyobb tudással tudom, hogy milyen részekkel érdemes kezdeni. Fejben már abszolút meg volt egy kezdeti specifikáció.&lt;/p&gt;
+
+&lt;p&gt;Még olyan rosszalló gondolatoktól is el hesegettem a gondolataimat, hogy mégis ki használná ezt a szoftvert, a mai korban a COVID járvány alatt van-e lét jogosultsága egy ilyen alkalmazásnak?&lt;/p&gt;
+
+&lt;p&gt;Csak neki akartam esni. Meg akartam csinálni. Olyan lelkesedéssel ültem neki, mint egy kis gyerek aki épp megkapta élete első villamos vonatát és építi fel a kis terep asztalát.&lt;/p&gt;
+
+&lt;p&gt;Napokban neki is estem, viszont kezdeti problémákba ütköztem, mint pedig, hogy itthon nem PhpStorm van gépen mint a munka helyemen. Így itthon már fel kell építenem egy fejlesztő környezetett, mert az ithoni PhpStorm licence-emmár lejárt, így hát más megoldások felé kellett mennem. Viszont nem találtam jobbat. Ami talán szimpatikus volt meg néhány ismerősöm ajánlotta a VSCode volt. Viszont nagyon, nagyon sok funkció hiányzott nekem ami a PhpStorm-ban benne volt. Biztos vagyok benne, hogy hasonlóvá tudtam volna tenni a VSCode-ot mint a versenytársa, viszont így is több órákat  el rontottam annak érdekében, hogy el kezdjek dolgozni és közel sem lettem kész.&lt;/p&gt;
+
+&lt;p&gt;Így hát megállt a lelkesedés, valamikor újra elő fog jönni, ebben biztos vagyok. Remélem legközelebb nem a rajt vonalnál fogok elvérezni… MEGINT.&lt;/p&gt;</content><author><name>keszei</name></author><summary type="html">Mikor OKJ-s időszakban voltam utolsó éves, a szakdogámat kellett írnom.</summary></entry><entry><title type="html">Építsd magad #2 - Sass rejtelmei</title><link href="/2021/09/30/epitsd_magad_2.html" rel="alternate" type="text/html" title="Építsd magad #2 - Sass rejtelmei" /><published>2021-09-30T00:00:00+02:00</published><updated>2021-09-30T00:00:00+02:00</updated><id>/2021/09/30/epitsd_magad_2</id><content type="html" xml:base="/2021/09/30/epitsd_magad_2.html">&lt;h2 id=&quot;mire-jó-egy-blog-egy-valamire-való-dizájn-nélkül&quot;&gt;Mire jó egy blog egy valamire való dizájn nélkül?&lt;/h2&gt;
+
+&lt;p&gt;Mint ahogy az előző posztomban mutattam a képet, jelenleg egy sima html oldal jelenik meg. Ez elég vacak egy kinézet, valahogy
+felkéne turbózni. Viszont a helyzet a következő: nagyon keveset értek a jó dizájnhoz. Én inkább a backend oldalon vagyok magabiztos, de azért a frontend se áll tőlem messze. Bootstrap-et is egész jól ismerem. Egy nagyon jó css “keretrendszer”. A jekyll szerencsére alapjáraton kezeli a &lt;code&gt;sass&lt;/code&gt; fájl konvertálást, szóval csak egyszerűen bele kell forgatni a bootstrap source kódját a &lt;code&gt;main.css&lt;/code&gt;-be.&lt;/p&gt;
+
+&lt;p&gt;Lehetne a bootstrap-et egyszerűen behúzni az oldalra egy cdn szerverről, viszont a felett nincs kontroll. Jobban szeretem a saját oldalamon tudni a saját fájljaimat. Régen &lt;code&gt;bower&lt;/code&gt; csomag kezelőt használtam arra, hogy letöltsem a bootstrap-et, de az már elavult és már nem is támogatott. ami a munkahelyemen bevált az a &lt;code&gt;yarn&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;A &lt;code&gt;yarn&lt;/code&gt; pontosan ugyan olyan csomag kezelő eszköz mint a &lt;code&gt;bower&lt;/code&gt; (sőt a maga a bower ajánlotta ezt maga helyett), vagy mint az &lt;code&gt;npm&lt;/code&gt;. A &lt;code&gt;yarn&lt;/code&gt; eredetileg ugyan úgy a &lt;code&gt;node_modules&lt;/code&gt; mappába teszi a letöltött vendor fájlokat, viszont ennek a helyét meg lehet változtatni a &lt;code&gt;.yarnrc&lt;/code&gt; fájlban ha csak annyit írsz be, hogy:&lt;/p&gt;
+
+&lt;div class=&quot;language-shell highlighter-coderay&quot;&gt;&lt;table class=&quot;CodeRay&quot;&gt;&lt;tr&gt;
+  &lt;td class=&quot;line-numbers&quot;&gt;&lt;pre&gt;&lt;a href=&quot;#n1&quot; name=&quot;n1&quot;&gt;1&lt;/a&gt;
+&lt;/pre&gt;&lt;/td&gt;
+  &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;--modules-folder ./_vendor
+&lt;/pre&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Innentől kezdve a megadott mappába fogja letölteni a fájljaid. Csak egy nagyon egyszerű parancssal le is töltöttem a bootstrap 4-et:&lt;/p&gt;
+
+&lt;div class=&quot;language-shell highlighter-coderay&quot;&gt;&lt;table class=&quot;CodeRay&quot;&gt;&lt;tr&gt;
+  &lt;td class=&quot;line-numbers&quot;&gt;&lt;pre&gt;&lt;a href=&quot;#n1&quot; name=&quot;n1&quot;&gt;1&lt;/a&gt;
+&lt;/pre&gt;&lt;/td&gt;
+  &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;yarn install bootstrap@4
+&lt;/pre&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Ezek után már elérhető is volt a projekt fájlok között a bootstrap. Viszont, hogy húzzuk be a blogba?&lt;/p&gt;
+
+&lt;p&gt;Ugye a &lt;code&gt;jekyll&lt;/code&gt;-nek alapjáraton bele van építve a &lt;code&gt;sass&lt;/code&gt; fordítás, valahogy bele kell varázsolni a &lt;code&gt;main.scss&lt;/code&gt;-be a bootstrap-et. Kis utána járás után meg is találtam a megoldást erre a fejtörőre. A &lt;code&gt;jekyll&lt;/code&gt; config fájljába megkell adni, hogy máshol is vannak scss fájlok. Így hozzá adtam a &lt;code&gt;_config.yml&lt;/code&gt; fájlhoz a következőt:&lt;/p&gt;
+
+&lt;div class=&quot;language-yaml highlighter-coderay&quot;&gt;&lt;table class=&quot;CodeRay&quot;&gt;&lt;tr&gt;
+  &lt;td class=&quot;line-numbers&quot;&gt;&lt;pre&gt;&lt;a href=&quot;#n1&quot; name=&quot;n1&quot;&gt;1&lt;/a&gt;
+&lt;a href=&quot;#n2&quot; name=&quot;n2&quot;&gt;2&lt;/a&gt;
+&lt;a href=&quot;#n3&quot; name=&quot;n3&quot;&gt;3&lt;/a&gt;
+&lt;a href=&quot;#n4&quot; name=&quot;n4&quot;&gt;4&lt;/a&gt;
+&lt;/pre&gt;&lt;/td&gt;
+  &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span style=&quot;color:#606&quot;&gt;sass&lt;/span&gt;:
+  &lt;span style=&quot;color:#606&quot;&gt;load_paths&lt;/span&gt;:
+    - &lt;span style=&quot;background-color:hsla(0,100%,50%,0.05)&quot;&gt;&lt;span style=&quot;color:#D20&quot;&gt;_sass&lt;/span&gt;&lt;/span&gt;
+    - &lt;span style=&quot;background-color:hsla(0,100%,50%,0.05)&quot;&gt;&lt;span style=&quot;color:#D20&quot;&gt;_vendor/bootstrap&lt;/span&gt;&lt;/span&gt;
+&lt;/pre&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Majd ezek után egy egyszerű húzással importálni kell a &lt;code&gt;styles.scss&lt;/code&gt;-be, így:&lt;/p&gt;
+
+&lt;div class=&quot;language-scss highlighter-coderay&quot;&gt;&lt;table class=&quot;CodeRay&quot;&gt;&lt;tr&gt;
+  &lt;td class=&quot;line-numbers&quot;&gt;&lt;pre&gt;&lt;a href=&quot;#n1&quot; name=&quot;n1&quot;&gt;1&lt;/a&gt;
+&lt;/pre&gt;&lt;/td&gt;
+  &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;@import &amp;quot;scss/bootstrap&amp;quot;
+&lt;/pre&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+
+&lt;p&gt;A végén csak le kell build-elni a blogot, és már készen is áll a csodálatos bootstrap a blogban. Igaz még csak &lt;code&gt;javascript&lt;/code&gt; nélkül, de idővel arra is találok valami megoldást.&lt;/p&gt;
+
+&lt;p&gt;Következőleg a “kiadással” kapcsolatban lesznek gondolat meneteim.&lt;/p&gt;</content><author><name>keszei</name></author><summary type="html">Mire jó egy blog egy valamire való dizájn nélkül?</summary></entry><entry><title type="html">Építsd magad #1</title><link href="/2021/09/28/epitsd_magad_1.html" rel="alternate" type="text/html" title="Építsd magad #1" /><published>2021-09-28T00:00:00+02:00</published><updated>2021-09-28T00:00:00+02:00</updated><id>/2021/09/28/epitsd_magad_1</id><content type="html" xml:base="/2021/09/28/epitsd_magad_1.html">&lt;p&gt;Mindig is akartam saját blogot vezetni. Viszont olyan problémákba ütköztem, hogy mégis miről tudnék írni?&lt;/p&gt;
+
+&lt;p&gt;Az életemről? Mindennapjaimról? Kritikákat írjak?&lt;/p&gt;
+
+&lt;p&gt;Ez az ötlet néha napján felötlött bennem. Annyira szeretnék blogolni, de nem tudom miről.
+Végül a ,,Programozók” Facebook csoportban találtam valamit. Valamit, ami elültetett egy gondolatot. Nem új keletű dolog, de mégis van benne egy kis kihívás.
+Készíteni egy  statikus blogot a nulláról, amit saját magad fejlesztesz le. Izgalmas és érdekes felvetés.
+Webfejlesztő vagyok, miért akarnék egy blogmotor által előre legyártott blogot vezetni? (lsd. Wordpress). Sokkal lassabban tölt be egy előre elkészített blogmotor (a sok felesleges komponens miatt), mint mondjuk egy statikus oldal.&lt;/p&gt;
+
+&lt;p&gt;Ebben a csoportbejegyzésben voltak érdekes felvetések, hogy miként lehetne egy fejlesztőnek blogot vezetni.
+Készítsd magad.. Oké, mivel és hogyan?&lt;/p&gt;
+
+&lt;p&gt;Legelső választásom a &lt;a href=&quot;https://github.com/cfenollosa/bashblog&quot; target=&quot;_blank&quot;&gt;bashblog&lt;/a&gt; eszközre esett. Tetszett,
+ahogyan kezelte a bejegyzéseket, egyszerűen paraméterezhető volt, valamint egyetlen egy bash script-ből állt.
+Ami nem tetszett benne, hogy mindig újra kellett generálni az elkészített html fájlokat. Valamint az utólag módosítás elég körülményes volt.&lt;/p&gt;
+
+&lt;p&gt;Nézegettem tovább, ugyanabban a csoportbejegyzésben valaki ajánlotta a &lt;a href=&quot;https://jekyllrb.com/&quot; target=&quot;_blank&quot;&gt;jekyll&lt;/a&gt; eszközt.
+Egyszerű a bejegyzés kezelése, a template kezelés is benne van. Tökéletes. De hogy kezdjek bele?&lt;/p&gt;
+
+&lt;p&gt;A &lt;code&gt;jekyll&lt;/code&gt; nagyon jól van dokumentálva, az alapokat nagyon egyszerűen meg lehet tanulni a [step-by-step]{https://jekyllrb.com/docs/step-by-step/01-setup/} leírásból.
+Az oktatóanyagnak a végén elég egyszerű oldalt lehet elkészíteni. Megtanítja, hogyan kell a layout-okat haználni, posztokat írni, írót hozzáadni, valamint ezutóbbihoz egy külön oldalt is írni.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/epitsd_magad/legelso_lepesek.png&quot; alt=&quot;Az oldal kezdeti kinézete&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Ez a legelső oldalnak még megteszi, legalább a kezdeti bejegyzéseket meg lehet írni. Későbbiekben lehet ezt az oldalt tovább bővíteni.&lt;/p&gt;
+
+&lt;p&gt;Külön bejegyzésekben fogok majd írni a &lt;code&gt;sass&lt;/code&gt;-ról, a &lt;code&gt;liquid&lt;/code&gt;-ről, továbbá lesznek még bejegyzések erről a keretrendszerről.&lt;/p&gt;
+
+&lt;p&gt;Na és természetesen a jövőben lesznek posztok a saját tapasztalataimról is.&lt;/p&gt;</content><author><name>keszei</name></author><summary type="html">Mindig is akartam saját blogot vezetni. Viszont olyan problémákba ütköztem, hogy mégis miről tudnék írni?</summary></entry><entry><title type="html">Hello World</title><link href="/2021/09/23/hello-world.html" rel="alternate" type="text/html" title="Hello World" /><published>2021-09-23T00:00:00+02:00</published><updated>2021-09-23T00:00:00+02:00</updated><id>/2021/09/23/hello-world</id><content type="html" xml:base="/2021/09/23/hello-world.html">&lt;p&gt;Ez itt a legelső bejegyzésem a saját fejlesztett blogomon.&lt;/p&gt;
+
+&lt;p&gt;Későbbiekben írok majd egy posztott arról, hogy mik az eddigi tapasztalataim.&lt;/p&gt;</content><author><name>keszei</name></author><summary type="html">Ez itt a legelső bejegyzésem a saját fejlesztett blogomon.</summary></entry></feed>
