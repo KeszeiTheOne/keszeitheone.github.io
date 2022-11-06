@@ -1,0 +1,40 @@
+{
+  "name": "keszeiblog",
+  "version": "1.0.0",
+  "main": "main.js",
+  "author": "Balazs Keszei",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "bootstrap": "^5.2.2",
+    "fontawesome-free": "^1.0.4",
+    "jquery": "^3.6.1",
+    "jquery-smooth-scroll": "^2.2.0",
+    "lity": "^2.4.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.20.2",
+    "@popperjs/core": "^2.11.6",
+    "babel-loader": "^9.1.0",
+    "node-sass": "^7.0.3",
+    "npm-run-all": "^4.1.5",
+    "webpack": "^5.74.0",
+    "webpack-cli": "^4.10.0"
+  },
+  "scripts": {
+    "dev": "run-s link compile-css-dev compile-js-dev",
+    "prod": "run-s link compile-css-prod compile-js-prod",
+    "compile-css-dev": "node-sass -r scss/ -o dist/css/ --output-style nested",
+    "compile-css-prod": "node-sass -r scss/ -o dist/css/ --output-style compressed",
+    "compile-js-dev": "webpack --mode development",
+    "compile-js-prod": "webpack --mode production",
+    "link": "run-s link-css link-js link-fonts",
+    "link-css": "ln -fs  '../src/dist/css' ../assets",
+    "link-js": "ln -fs '../src/dist/js' ../assets",
+    "link-fonts": "run-s link-fa-font",
+    "link-fa-font": "ln -fs '../../src/node_modules/fontawesome-free/webfonts' ../assets/fonts/",
+    "watch": "run-p watch-css watch-js",
+    "watch-js": "webpack --mode development --watch",
+    "watch-css": "node-sass -r -w scss/ -o dist/css/ --output-style nested"
+  }
+}

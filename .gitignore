@@ -1,0 +1,12 @@
+.idea
+.jekyll-cache
+
+_dist
+_site
+assets/js
+assets/css
+assets/fonts/*
+!assets/fonts/.gitkeep
+
+src/node_modules
+src/dist

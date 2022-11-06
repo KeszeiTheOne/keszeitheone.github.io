@@ -1,0 +1,55 @@
+timezone: Europe/Budapest
+encoding: UTF-8
+locale: hu
+
+theme: jekyll-theme-so-simple
+read_time: true
+
+# Build settings
+permalink: /:categories/:title/
+markdown: kramdown
+feed:
+  path: atom.xml
+
+collections:
+  authors:
+    output: true
+  text:
+    output: true
+  navigation:
+    output: true
+
+defaults:
+  - scope:
+      path: ""
+      type: "authors"
+    values:
+      layout: "author"
+  - scope:
+      path: "_posts"
+      type: posts
+    values:
+      layout: post
+      share: true
+  - scope:
+      path: ""
+    values:
+      layout: "base"
+
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-paginate
+
+exclude:
+  - src
+
+jekyll_admin:
+  homepage: "drafts"
+
+# Footer Links
+footer_links:
+  - title: Feed
+    url: atom.xml
+    icon: fas fa-rss-square

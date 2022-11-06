@@ -1,0 +1,19 @@
+# Sample Authors
+# Remove file or replace with your own
+
+keszei:
+  name: Keszei Balázs
+#  picture: /images/bio-photo-2.jpg
+  twitter: "@keszeitheone"
+  links:
+    - title: Page
+      url: authors/keszei
+      icon: fab fa-twitter-square
+    - title: Twitter
+      url: https://twitter.com/keszeitheone
+      icon: fab fa-twitter-square
+
+Cornelius Fiddlebone:
+  name: Cornelius Fiddlebone
+  picture: /images/bio-photo.jpg
+  twitter: corneliusfiddlebone
