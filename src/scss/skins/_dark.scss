@@ -1,24 +1,18 @@
-@charset "utf-8";
-
-@import "../so-simple/functions";
-@import "../so-simple/variables";
-@import "../so-simple/notices";
-
 /* Colors */
-$base-color: #eaeaea !default;
-$text-color: #eaeaea !default;
-$accent-color: #00adb5 !default;
-$nav-color: #aeaeae !default;
-$background-color: #252a34 !default;
-$nav-background-color: mix(#000, $background-color, 30%) !default;
-$code-background-color: mix(#000, $background-color, 15%) !default;
-$border-color: tint($base-color, 80%) !default;
+$base-color: #eaeaea ;
+$text-color: #eaeaea;
+$accent-color: #00adb5;
+$nav-color: #aeaeae;
+$background-color: #252a34;
+$nav-background-color: mix(#000, $background-color, 30%);
+$code-background-color: mix(#000, $background-color, 15%);
+$border-color: tint($base-color, 80%);
 
-$primary-color: white !default;
-$success-color: rgb(48, 209, 88) !default;
-$warning-color: rgb(255, 214, 10) !default;
-$danger-color: rgb(255, 69, 58) !default;
-$info-color: rgb(100, 210, 255) !default;
+$primary-color: white;
+$success-color: rgb(48, 209, 88);
+$warning-color: rgb(255, 214, 10);
+$danger-color: rgb(255, 69, 58);
+$info-color: rgb(100, 210, 255);
 
 $base00: #263238;
 $base01: #2e3c43;
@@ -36,5 +30,3 @@ $base0c: #89ddff;
 $base0d: #82aaff;
 $base0e: #c792ea;
 $base0f: #ff5370;
-
-@import "../so-simple/skin";

@@ -1,5 +1,10 @@
+@charset "utf-8";
+
+@import "../node_modules/bootstrap/scss/bootstrap";
 @import "so-simple";
-@import "skins/dark";
+@import "variables";
+@import "so-simple/skin";
+
 @import "../node_modules/lity/dist/lity";
 
 $fa-font-path: "../fonts/webfonts";
