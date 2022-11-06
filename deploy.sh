@@ -39,6 +39,7 @@ rm -rf *
 
 mv ${TEMP}/blog.dist.zip .
 unzip blog.dist.zip
+rm blog.dist.zip
 
 git add .
 git commit -am "new version $(date)" --allow-empty
