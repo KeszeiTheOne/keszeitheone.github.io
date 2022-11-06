@@ -36,3 +36,10 @@ fi
 
 echo -e "\nDeploying into ${BRANCH} branch:"
 rm -rf *
+
+mv ${TEMP}/blog.dist.zip .
+unzip blog.dist.zip
+
+git add .
+git commit -am "new version $(date)" --allow-empty
+git push origin ${BRANCH} 2>&1 | sed 's|'$URL'|[skipped]|g'
