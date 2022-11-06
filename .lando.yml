@@ -67,7 +67,7 @@ tooling:
     cmd:
       - yarn install --pure-lockfile
       - yarn prod
-      - jekyll build -d _dist
+      - jekyll build -d _dist -e production
     user: jekyll
 
   watch:
