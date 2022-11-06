@@ -12,8 +12,7 @@ TEMP2=$(mktemp -d)
 trap "rm -rf ${TEMP}" EXIT
 trap "rm -rf ${TEMP2}" EXIT
 
-cp -R . ${TEMP}
-cd ${TEMP}
+
 
 echo -e "\nBuilding Jekyll site:"
 rm -rf _dist
@@ -25,6 +24,9 @@ if [ ! -e _dist ]; then
   echo -e "\nJekyll didn't generate anything in _dist!"
   exit -1
 fi
+
+cp -R . ${TEMP}
+cd ${TEMP}
 
 cd _dist
 zip -r ../blog.dist.zip .
