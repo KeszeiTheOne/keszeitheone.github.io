@@ -39,6 +39,8 @@ rm -rf *
 
 mv ${TEMP}/blog.dist.zip .
 unzip blog.dist.zip
+rm .gitignore
+rm -rf .idea
 rm blog.dist.zip
 
 git add .
