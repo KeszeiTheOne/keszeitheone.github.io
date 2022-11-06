@@ -3,6 +3,7 @@
    ========================================================================== */
 
 .author-avatar {
+  background-color: white;
   display: none;
 
   @include breakpoint($large) {

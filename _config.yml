@@ -7,6 +7,12 @@ url: https://keszeitheone.github.io  # the base hostname and protocol for your s
 
 theme: jekyll-theme-so-simple
 read_time: true
+words_per_minute: 200
+date_format: "%Y-%m-%d"
+description: Keszei Blog
+paginate: 10  # amount of posts to show per page
+paginate_path: /page:num/
+google_analytics: G-CNG97X4FM1
 
 # Build settings
 permalink: /:categories/:title/

@@ -2,8 +2,47 @@
 @import "skins/dark";
 @import "../node_modules/lity/dist/lity";
 
-$fa-font-path: '../fonts/webfonts';
+$fa-font-path: "../fonts/webfonts";
 @import "../node_modules/fontawesome-free/scss/fontawesome";
 @import "../node_modules/fontawesome-free/scss/solid";
 @import "../node_modules/fontawesome-free/scss/regular";
 @import "../node_modules/fontawesome-free/scss/brands";
+
+.site-logo-icon {
+  position: relative;
+  width: $site-logo-width;
+  height: $site-logo-height;
+  border-radius: $site-logo-width;
+  border: 5px solid $background-color;
+  background-color: $base03;
+
+  i {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 50%;
+	transform: translateY(-50%);
+	font-size: 1em;
+  }
+
+  @include breakpoint($medium) {
+	width: 1.5 * $site-logo-width;
+	height: 1.5 * $site-logo-height;
+	border-radius: 1.5 * $site-logo-width;
+	i {
+	  font-size: 2em;
+	}
+  }
+
+  @include breakpoint($large) {
+	width: 2 * $site-logo-width;
+	height: 2 * $site-logo-height;
+	border-radius: 2 * $site-logo-width;
+	i {
+	  font-size: 3em;
+	}
+  }
+
+
+
+}
