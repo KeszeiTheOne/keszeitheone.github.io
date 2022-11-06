@@ -4,12 +4,13 @@ locale: hu
 
 domain: keszeitheone.github.io       # if you want to force HTTPS, specify the domain without the http at the start, e.g. example.com
 url: https://keszeitheone.github.io  # the base hostname and protocol for your site, e.g. http://example.com
+title: Keszei Blog
+#description: Keszei Blog
 
 theme: jekyll-theme-so-simple
 read_time: true
 words_per_minute: 200
 date_format: "%Y-%m-%d"
-description: Keszei Blog
 paginate: 10  # amount of posts to show per page
 paginate_path: /page:num/
 google_analytics: G-CNG97X4FM1
