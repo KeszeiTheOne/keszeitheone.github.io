@@ -2,6 +2,9 @@ timezone: Europe/Budapest
 encoding: UTF-8
 locale: hu
 
+domain: keszeitheone.github.io       # if you want to force HTTPS, specify the domain without the http at the start, e.g. example.com
+url: https://keszeitheone.github.io  # the base hostname and protocol for your site, e.g. http://example.com
+
 theme: jekyll-theme-so-simple
 read_time: true
 
