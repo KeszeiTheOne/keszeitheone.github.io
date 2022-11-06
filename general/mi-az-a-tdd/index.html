@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<!--
+    So Simple Jekyll Theme 3.2.0
+    Copyright 2013-2019 Michael Rose - mademistakes.com | @mmistakes
+    Free for personal and commercial use under the MIT license
+    https://github.com/mmistakes/so-simple-theme/blob/master/LICENSE
+-->
+<html lang="en-US" class="no-js">
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+
+  
+    
+    <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Mi az a TDD? | Keszei Blog</title>
+<meta name="generator" content="Jekyll v4.3.1" />
+<meta property="og:title" content="Mi az a TDD?" />
+<meta name="author" content="Keszei Balázs" />
+<meta property="og:locale" content="hu" />
+<meta name="description" content="TDD, mint Test Driven Development." />
+<meta property="og:description" content="TDD, mint Test Driven Development." />
+<link rel="canonical" href="https://keszeitheone.github.io/general/mi-az-a-tdd/" />
+<meta property="og:url" content="https://keszeitheone.github.io/general/mi-az-a-tdd/" />
+<meta property="og:site_name" content="Keszei Blog" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2022-11-06T00:00:00+01:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Mi az a TDD?" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Keszei Balázs"},"dateModified":"2022-11-06T00:00:00+01:00","datePublished":"2022-11-06T00:00:00+01:00","description":"TDD, mint Test Driven Development.","headline":"Mi az a TDD?","mainEntityOfPage":{"@type":"WebPage","@id":"https://keszeitheone.github.io/general/mi-az-a-tdd/"},"url":"https://keszeitheone.github.io/general/mi-az-a-tdd/"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+  
+
+  <script>
+    /* Cut the mustard */
+    if ( 'querySelector' in document && 'addEventListener' in window ) {
+      document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + 'js';
+    }
+  </script>
+
+  <link rel="stylesheet" href="/assets/css/style.css">
+<!--  <link rel="stylesheet" href="/assets/css/skins/default.css">-->
+  <link rel="alternate" type="application/atom+xml" title="Keszei Blog" href="/atom.xml">
+<!-- start custom head snippets -->
+
+<!-- insert favicons. use http://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+</head>
+
+  <!--<script>-->
+<!--  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){-->
+<!--  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),-->
+<!--  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)-->
+<!--  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');-->
+
+<!--  ga('create', 'G-CNG97X4FM1', 'auto');-->
+<!--  ga('send', 'pageview');-->
+<!--</script>-->
+<!-- Google tag (gtag.js) --><!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-CNG97X4FM1"></script>
+<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+
+	gtag('config', 'G-CNG97X4FM1');
+</script>
+
+  <body class="layout--post  mi-az-a-tdd">
+    <nav class="skip-links">
+  <h2 class="screen-reader-text">Skip links</h2>
+  <ul>
+    <li><a href="#primary-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    
+  <div class="navigation-wrapper">
+    <a href="#menu-toggle" id="menu-toggle">Menü</a>
+    <nav id="primary-nav" class="site-nav animated drop">
+      <ul><li><a href="/">Home</a></li><li><a href="/posts/">Posts</a></li><li><a href="/categories/">Categories</a></li><li><a href="/tags/">Tags</a></li></ul>
+    </nav>
+  </div><!-- /.navigation-wrapper -->
+
+
+    <header class="masthead">
+    <div class="wrap">
+        <a href="/" class="site-logo" rel="home" title="Keszei Blog">
+            <div class="site-logo-icon  animated fadeInDown">
+                <i class="fas fa-terminal "></i>
+            </div>
+            <!--        <img src="" class="site-logo-img animated fadeInDown" alt="Keszei Blog">-->
+        </a>
+        
+        
+        
+        <div class="site-title animated fadeIn"><a href="/">Keszei Blog</a></div>
+        
+        <p class="site-description animated fadeIn" itemprop="description"></p>
+        
+    </div>
+</header><!-- /.masthead -->
+
+
+    <main id="main" class="main-content" aria-label="Content">
+  <article class="h-entry">
+    
+
+    <div class="page-wrapper">
+      <header class="page-header">
+        
+        
+          <h1 id="page-title" class="page-title p-name">Mi az a TDD?
+</h1>
+        
+      </header>
+
+      <div class="page-sidebar">
+        <div class="page-author h-card p-author"><img src="/assets/images/authors/keszei.png" class="author-avatar u-photo " alt="Keszei Balázs"><div class="author-info"><div class="author-name">
+        <em>Készítette:</em> <a href="/authors/keszei" class="u-url" rel="me">
+            <span class="p-name">Keszei Balázs</span>
+          </a></div><ul class="author-links"><li class="author-link">
+            <a class="u-url" rel="me" href="https://twitter.com/keszeitheone"><i class="fab fa-twitter-square fa-lg" title="Twitter"></i></a>
+          </li></ul>
+
+<span class="read-time">2 perc olvasás</span>
+
+    <time class="page-date dt-published" datetime="2022-11-06T00:00:00+01:00"><a class="u-url" href="">2022-11-06</a>
+</time>
+
+  </div>
+</div>
+
+        
+  <h3 class="page-taxonomies-title">Kategóriák</h3>
+  <ul class="page-taxonomies"><li class="page-taxonomy">general</li>
+  </ul>
+
+
+        
+  <h3 class="page-taxonomies-title">Tags</h3>
+  <ul class="page-taxonomies"><li class="page-taxonomy">develop</li><li class="page-taxonomy">work</li><li class="page-taxonomy">tdd</li>
+  </ul>
+
+
+      </div>
+
+      <div class="page-content">
+        <div class="e-content">
+          <h2 id="tdd-mint-test-driven-development">TDD, mint Test Driven Development.</h2>
+
+<p>A jelenlegi munkahelyemen, ez egy fontos fejlesztési eszköz. Nagyon egyszerűen fogalmazva az alapelve, hogy először tesztet írunk és utána csak production kódot.</p>
+
+<p>A TDD fejlesztésnek 3 fő lépése van, ami folyamatosan körbe-körbe “hajtódik” végbe.</p>
+
+<ul>
+  <li><span class="text-danger">Red</span></li>
+  <li><span class="text-success">Green</span></li>
+  <li><span class="text-info">Refactor</span></li>
+</ul>
+
+<h3 id="red-lépés"><span class="text-danger">Red</span> lépés</h3>
+<p>Először is mikor neki állunk egy algoritmus megírásához írnunk kell egy <span class="text-danger">fail</span>-elő tesztet. A teszt megírása elött meg kell fogalmaznunk magunkban, mit is szeretnénk, hogy csináljon az adott függvény amit megszeretnénk írni. Vegyük egy egyszerű példát.</p>
+
+<p>Azt szeretnénk megírni, hogy a végső eredmény egy adott matematikai műveletett végezzen el. PHP-ban írom a példát, mert azt jobban ismerem. Az első tesztünk az lesz, hogy a függvényünk adjon össze 2 számot.</p>
+
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">public</span> <span class="k">function</span> <span class="n">testSum</span><span class="p">()</span> <span class="p">{</span>
+	<span class="nv">$this</span><span class="o">-&gt;</span><span class="nf">assertSame</span><span class="p">(</span><span class="mi">7</span><span class="p">,</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="nf">calc</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">));</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>Ha lefuttatjuk az általunk kedvelt kód szerkesztőben a teszt futtató környezetünket. PHP-ban például ez a PHPUnit-ot jelenti. A végeredmény az lesz, hogy pirosan fog vírítani a konzolban.</p>
+
+<p>Ez a <span class="text-danger">Red</span> lépés. Hibára futtatuk a tesztünket és csak ekkor javíthatjuk ki a tesztet, úgy, hogy a production kódban a megfelelő eredményt adjuk vissza.</p>
+
+<h3 id="green-lépés"><span class="text-success">Green</span> lépés</h3>
+<p>Ebben a részben javítjuk ki a tesztünket, hogy zöld legyen. Az a fontos ebben a lépésben, hogy nem szabad annál többet írni, mint ami a teszt megkíván. A példa kedvéért a kódunkban nem fogjuk ténylegesen össze adni a két értéket, hanem csak egyszerűen vissza adjuk a 7-et.</p>
+
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">public</span> <span class="k">function</span> <span class="n">calc</span><span class="p">(</span><span class="nv">$x</span><span class="p">,</span> <span class="nv">$y</span><span class="p">)</span> <span class="p">{</span>
+	<span class="k">return</span> <span class="mi">7</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>Ezek után ha újra lefuttatjuk a tesztünket, már zölden is virít. NIncs más teendőnk ezután csak tovább lépni a következő lépésre.</p>
+
+<h3 id="refactor-lépés"><span class="text-info">Refactor</span> lépés</h3>
+<p>A példánkban ennél a lépésnél nagyon nem lehet mit refactorálni, de ennél a lépésnél lehet megtenni azt, hogy amit a production kódban megírtunk azt szépítsük, gyorsabbá vagy újra felhasználhatóvá tegyük. Ennél a lépésnél is nagyon fontos, hogy bármi amit módosítunk a kódunkon, az ne “törje” el a tesztünket. Vagyis mindig <span class="text-success">zöldben</span> kell maradnunk. Ennek a lépésnek a vége, akkor van mikor magunk úgy gondoljuk.</p>
+
+<p>Miután végeztünk folytathatjuk a lépéseket újra az elejétől.</p>
+
+<h3 id="repeat-lépés"><span class="text-warning">Repeat</span> lépés</h3>
+<p>A folyamat kezdődik előlről újra a <span class="text-danger">red</span> lépésben vagyunk, vagyis hibás tesztet kell írnunk. A példánkban látszik, hogy nem a megfelelő a számíásunk, mert hát csak egyszerűen 7-est adunk vissza ahelyett, hogy ténylegesen kiszámítanánk. Ezt nagyon egyszerűen tudjuk orvosolni. Írnunk kell egy másik tesztet ami más eredményt vár a függvényünktől.</p>
+
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">public</span> <span class="k">function</span> <span class="n">testSum</span><span class="p">()</span> <span class="p">{</span>
+	<span class="nv">$this</span><span class="o">-&gt;</span><span class="nf">assertSame</span><span class="p">(</span><span class="mi">7</span><span class="p">,</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="nf">calc</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">));</span>
+<span class="p">}</span>
+
+<span class="k">public</span> <span class="k">function</span> <span class="n">testAnotherSum</span><span class="p">()</span> <span class="p">{</span>
+	<span class="nv">$this</span><span class="o">-&gt;</span><span class="nf">assertSame</span><span class="p">(</span><span class="mi">9</span><span class="p">,</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="nf">calc</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">7</span><span class="p">));</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>Lefuttatjuk a tesztünket és hibára is fut, nyílván. A production kódunkat már javíthatjuk azzal a lendülettel, hogy ténylegesen számítjuk az értékeket.</p>
+
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">public</span> <span class="k">function</span> <span class="n">calc</span><span class="p">(</span><span class="nv">$x</span><span class="p">,</span> <span class="nv">$y</span><span class="p">)</span> <span class="p">{</span>
+	<span class="k">return</span> <span class="nv">$x</span> <span class="o">+</span> <span class="nv">$y</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>Fontos, hogy úgy módosítsuk a kódunkat, hogy minden tesztünknek zöldnek kell lennie. Innen mindent újra meg újra meg újra meg újra.</p>
+
+<p class="text-center"><img src="/assets/images/posts/miazatdd_and_again.gif" alt="And again" /></p>
+
+<p>Majd az egésznek vége is van, hogy ha a végeredmény azt adja vissza amit szeretnénk akkor végeztünk is.</p>
+
+<p>Gratulálok, meg tanultad a TDD alapjait.</p>
+
+        </div>
+
+        
+          <div class="page-share">
+  <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fkeszeitheone.github.io%2Fgeneral%2Fmi-az-a-tdd%2F" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" class="btn btn--facebook btn--small"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i> <span>Megosztás</span></a>
+  <a href="https://twitter.com/intent/tweet?text=Mi+az+a+TDD%3F%20https%3A%2F%2Fkeszeitheone.github.io%2Fgeneral%2Fmi-az-a-tdd%2F" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" class="btn btn--twitter btn--small"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i> <span>Tweet</span></a>
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fkeszeitheone.github.io%2Fgeneral%2Fmi-az-a-tdd%2F" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" class="btn btn--linkedin btn--small"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i> <span>LinkedIn</span></a>
+  <a href="https://reddit.com/submit?title=Mi+az+a+TDD%3F&url=https%3A%2F%2Fkeszeitheone.github.io%2Fgeneral%2Fmi-az-a-tdd%2F" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" class="btn btn--reddit btn--small"><i class="fab fa-fw fa-reddit" aria-hidden="true"></i> <span>Reddit</span></a>
+</div>
+
+        
+
+        
+
+        <nav class="page-pagination" role="navigation">
+  
+    <a class="page-previous" href="/general/initial-commit/">
+      <h4 class="page-pagination-label">Előző</h4>
+      <span class="page-pagination-title">
+        <i class="fas fa-arrow-left"></i> Initial commit
+
+      </span>
+    </a>
+  
+
+  
+</nav>
+
+      </div>
+    </div>
+  </article>
+</main>
+
+
+    <footer id="footer" class="site-footer">
+  <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+<div class="social-icons"><a class="social-icon" href="/atom.xml"><i class="fas fa-rss-square fa-2x" title="Feed"></i></a></div><div class="copyright">
+    
+      <p>&copy; 2022 Keszei Blog. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://github.com/mmistakes/so-simple-theme" rel="nofollow">So Simple</a>.</p>
+    
+  </div>
+</footer>
+
+    <!--  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>-->
+<!--  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>-->
+  <script src="/assets/js/main-build.js"></script>
+<!--  <script src="https://use.fontawesome.com/releases/v5.0.12/js/all.js"></script>--><!--<script async src="https://www.googletagmanager.com/gtag/js?id=G-CNG97X4FM1"></script>-->
+<!--<script>-->
+<!--  window.dataLayer = window.dataLayer || [];-->
+<!--  function gtag(){dataLayer.push(arguments);}-->
+<!--  gtag('js', new Date());-->
+
+<!--  gtag('config', 'G-CNG97X4FM1');-->
+<!--  gtag('create', 'G-CNG97X4FM1', 'auto');-->
+<!--  gtag('send', 'pageview');-->
+<!--</script>-->
+<!--  <script>-->
+<!--  if(!(window.doNotTrack === "1" || navigator.doNotTrack === "1" || navigator.doNotTrack === "yes" || navigator.msDoNotTrack === "1")) {-->
+<!--    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){-->
+<!--    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),-->
+<!--    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)-->
+<!--    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');-->
+<!--    ga('create', 'G-CNG97X4FM1', 'auto');-->
+<!--    ga('send', 'pageview');-->
+<!--  }-->
+<!--  </script>-->
+
+
+  </body>
+
+</html>

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.1">Jekyll</generator><link href="https://keszeitheone.github.io/atom.xml" rel="self" type="application/atom+xml" /><link href="https://keszeitheone.github.io/" rel="alternate" type="text/html" /><updated>2022-11-06T17:00:08+01:00</updated><id>https://keszeitheone.github.io/atom.xml</id><title type="html">Keszei Blog</title><entry><title type="html">Initial commit</title><link href="https://keszeitheone.github.io/general/initial-commit/" rel="alternate" type="text/html" title="Initial commit" /><published>2022-11-06T00:00:00+01:00</published><updated>2022-11-06T00:00:00+01:00</updated><id>https://keszeitheone.github.io/general/initial-commit</id><content type="html" xml:base="https://keszeitheone.github.io/general/initial-commit/"><![CDATA[<p>Régebben mindig is próbálkoztam saját blogot írni, több kevesebb sikerrel.</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.1">Jekyll</generator><link href="https://keszeitheone.github.io/atom.xml" rel="self" type="application/atom+xml" /><link href="https://keszeitheone.github.io/" rel="alternate" type="text/html" /><updated>2022-11-06T19:19:46+01:00</updated><id>https://keszeitheone.github.io/atom.xml</id><title type="html">Keszei Blog</title><entry><title type="html">Initial commit</title><link href="https://keszeitheone.github.io/general/initial-commit/" rel="alternate" type="text/html" title="Initial commit" /><published>2022-11-06T00:00:00+01:00</published><updated>2022-11-06T00:00:00+01:00</updated><id>https://keszeitheone.github.io/general/initial-commit</id><content type="html" xml:base="https://keszeitheone.github.io/general/initial-commit/"><![CDATA[<p>Régebben mindig is próbálkoztam saját blogot írni, több kevesebb sikerrel.</p>
 
 <p>Most egy újjabb próbálkozást láttok, ami lehet, hogy dugába dől mint az előzőek is. Próbálkoztam twitterrel, blog.hu-val, saját bloggal stb.</p>
 
@@ -8,4 +8,70 @@
 
 <p>Találtam is egy szép témát is hozzá. Kicsit módosítottam rajta, hogy végül csak egy javascript és egy css fájl betöltés legyen, hogy a végén kimaradjanak a cdn betöltések.</p>
 
-<p>Vannak még gondolataim arra, hogy mit szeretnék még írni, deegyenlőre ez a legelső posztom ezen az oldalon.</p>]]></content><author><name>Keszei Balázs</name></author><category term="general" /><category term="jekyll" /><category term="blog" /><summary type="html"><![CDATA[Régebben mindig is próbálkoztam saját blogot írni, több kevesebb sikerrel.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://keszeitheone.github.io/assets/images/posts/initial_commit.jpg" /><media:content medium="image" url="https://keszeitheone.github.io/assets/images/posts/initial_commit.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
+<p>Vannak még gondolataim arra, hogy mit szeretnék még írni, deegyenlőre ez a legelső posztom ezen az oldalon.</p>]]></content><author><name>Keszei Balázs</name></author><category term="general" /><category term="jekyll" /><category term="blog" /><summary type="html"><![CDATA[Régebben mindig is próbálkoztam saját blogot írni, több kevesebb sikerrel.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://keszeitheone.github.io/assets/images/posts/initial_commit.jpg" /><media:content medium="image" url="https://keszeitheone.github.io/assets/images/posts/initial_commit.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Mi az a TDD?</title><link href="https://keszeitheone.github.io/general/mi-az-a-tdd/" rel="alternate" type="text/html" title="Mi az a TDD?" /><published>2022-11-06T00:00:00+01:00</published><updated>2022-11-06T00:00:00+01:00</updated><id>https://keszeitheone.github.io/general/mi-az-a-tdd</id><content type="html" xml:base="https://keszeitheone.github.io/general/mi-az-a-tdd/"><![CDATA[<h2 id="tdd-mint-test-driven-development">TDD, mint Test Driven Development.</h2>
+
+<p>A jelenlegi munkahelyemen, ez egy fontos fejlesztési eszköz. Nagyon egyszerűen fogalmazva az alapelve, hogy először tesztet írunk és utána csak production kódot.</p>
+
+<p>A TDD fejlesztésnek 3 fő lépése van, ami folyamatosan körbe-körbe “hajtódik” végbe.</p>
+
+<ul>
+  <li><span class="text-danger">Red</span></li>
+  <li><span class="text-success">Green</span></li>
+  <li><span class="text-info">Refactor</span></li>
+</ul>
+
+<h3 id="red-lépés"><span class="text-danger">Red</span> lépés</h3>
+<p>Először is mikor neki állunk egy algoritmus megírásához írnunk kell egy <span class="text-danger">fail</span>-elő tesztet. A teszt megírása elött meg kell fogalmaznunk magunkban, mit is szeretnénk, hogy csináljon az adott függvény amit megszeretnénk írni. Vegyük egy egyszerű példát.</p>
+
+<p>Azt szeretnénk megírni, hogy a végső eredmény egy adott matematikai műveletett végezzen el. PHP-ban írom a példát, mert azt jobban ismerem. Az első tesztünk az lesz, hogy a függvényünk adjon össze 2 számot.</p>
+
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">public</span> <span class="k">function</span> <span class="n">testSum</span><span class="p">()</span> <span class="p">{</span>
+	<span class="nv">$this</span><span class="o">-&gt;</span><span class="nf">assertSame</span><span class="p">(</span><span class="mi">7</span><span class="p">,</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="nf">calc</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">));</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>Ha lefuttatjuk az általunk kedvelt kód szerkesztőben a teszt futtató környezetünket. PHP-ban például ez a PHPUnit-ot jelenti. A végeredmény az lesz, hogy pirosan fog vírítani a konzolban.</p>
+
+<p>Ez a <span class="text-danger">Red</span> lépés. Hibára futtatuk a tesztünket és csak ekkor javíthatjuk ki a tesztet, úgy, hogy a production kódban a megfelelő eredményt adjuk vissza.</p>
+
+<h3 id="green-lépés"><span class="text-success">Green</span> lépés</h3>
+<p>Ebben a részben javítjuk ki a tesztünket, hogy zöld legyen. Az a fontos ebben a lépésben, hogy nem szabad annál többet írni, mint ami a teszt megkíván. A példa kedvéért a kódunkban nem fogjuk ténylegesen össze adni a két értéket, hanem csak egyszerűen vissza adjuk a 7-et.</p>
+
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">public</span> <span class="k">function</span> <span class="n">calc</span><span class="p">(</span><span class="nv">$x</span><span class="p">,</span> <span class="nv">$y</span><span class="p">)</span> <span class="p">{</span>
+	<span class="k">return</span> <span class="mi">7</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>Ezek után ha újra lefuttatjuk a tesztünket, már zölden is virít. NIncs más teendőnk ezután csak tovább lépni a következő lépésre.</p>
+
+<h3 id="refactor-lépés"><span class="text-info">Refactor</span> lépés</h3>
+<p>A példánkban ennél a lépésnél nagyon nem lehet mit refactorálni, de ennél a lépésnél lehet megtenni azt, hogy amit a production kódban megírtunk azt szépítsük, gyorsabbá vagy újra felhasználhatóvá tegyük. Ennél a lépésnél is nagyon fontos, hogy bármi amit módosítunk a kódunkon, az ne “törje” el a tesztünket. Vagyis mindig <span class="text-success">zöldben</span> kell maradnunk. Ennek a lépésnek a vége, akkor van mikor magunk úgy gondoljuk.</p>
+
+<p>Miután végeztünk folytathatjuk a lépéseket újra az elejétől.</p>
+
+<h3 id="repeat-lépés"><span class="text-warning">Repeat</span> lépés</h3>
+<p>A folyamat kezdődik előlről újra a <span class="text-danger">red</span> lépésben vagyunk, vagyis hibás tesztet kell írnunk. A példánkban látszik, hogy nem a megfelelő a számíásunk, mert hát csak egyszerűen 7-est adunk vissza ahelyett, hogy ténylegesen kiszámítanánk. Ezt nagyon egyszerűen tudjuk orvosolni. Írnunk kell egy másik tesztet ami más eredményt vár a függvényünktől.</p>
+
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">public</span> <span class="k">function</span> <span class="n">testSum</span><span class="p">()</span> <span class="p">{</span>
+	<span class="nv">$this</span><span class="o">-&gt;</span><span class="nf">assertSame</span><span class="p">(</span><span class="mi">7</span><span class="p">,</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="nf">calc</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">));</span>
+<span class="p">}</span>
+
+<span class="k">public</span> <span class="k">function</span> <span class="n">testAnotherSum</span><span class="p">()</span> <span class="p">{</span>
+	<span class="nv">$this</span><span class="o">-&gt;</span><span class="nf">assertSame</span><span class="p">(</span><span class="mi">9</span><span class="p">,</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="nf">calc</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">7</span><span class="p">));</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>Lefuttatjuk a tesztünket és hibára is fut, nyílván. A production kódunkat már javíthatjuk azzal a lendülettel, hogy ténylegesen számítjuk az értékeket.</p>
+
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">public</span> <span class="k">function</span> <span class="n">calc</span><span class="p">(</span><span class="nv">$x</span><span class="p">,</span> <span class="nv">$y</span><span class="p">)</span> <span class="p">{</span>
+	<span class="k">return</span> <span class="nv">$x</span> <span class="o">+</span> <span class="nv">$y</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>Fontos, hogy úgy módosítsuk a kódunkat, hogy minden tesztünknek zöldnek kell lennie. Innen mindent újra meg újra meg újra meg újra.</p>
+
+<p class="text-center"><img src="/assets/images/posts/miazatdd_and_again.gif" alt="And again" /></p>
+
+<p>Majd az egésznek vége is van, hogy ha a végeredmény azt adja vissza amit szeretnénk akkor végeztünk is.</p>
+
+<p>Gratulálok, meg tanultad a TDD alapjait.</p>]]></content><author><name>Keszei Balázs</name></author><category term="general" /><category term="develop" /><category term="work" /><category term="tdd" /><summary type="html"><![CDATA[TDD, mint Test Driven Development.]]></summary></entry></feed>
