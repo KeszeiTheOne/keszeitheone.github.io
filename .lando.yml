@@ -1,0 +1,78 @@
+name: keszeiblog
+
+proxy:
+  appserver:
+    - keszeiblog.lndo.site:4000
+
+services:
+
+  appserver:
+    type: compose
+    app_mount: false
+    scanner: false
+    ssl: true
+    moreHttpPorts:
+      - '4000'
+    build_as_root:
+      - apk add nodejs npm
+      - npm install --global yarn
+    services:
+#      user: jekyll
+      image: jekyll/jekyll:4
+      command: jekyll serve --config _config.yml,_config.dev.yml
+      ports:
+        - '4000'
+      working_dir: /app
+      environment:
+#        LANDO_WEBROOT_USER: jekyll
+#        LANDO_WEBROOT_GROUP: jekyll
+        JEKYLL_ENV: development
+      volumes:
+        - $PWD:/app
+
+tooling:
+
+  jekyll:
+    service: appserver
+    command: jekyll
+    user: jekyll
+#    dir: /srv/jekyll
+
+  bundle:
+    service: appserver
+    command: bundle
+    user: jekyll
+
+  yarn:
+    service: appserver
+    cmd: yarn
+    user: jekyll
+
+  dev:
+    service: appserver
+    cmd:
+      - yarn install --pure-lockfile
+      - yarn dev
+    user: jekyll
+
+  prod:
+    service: appserver
+    cmd:
+      - yarn install --pure-lockfile
+      - yarn prod
+    user: jekyll
+
+  build:
+    service: appserver
+    cmd:
+      - yarn install --pure-lockfile
+      - yarn prod
+      - jekyll build -d _dist
+    user: jekyll
+
+  watch:
+    service: appserver
+    cmd:
+      - yarn install --pure-lockfile
+      - yarn watch
+    user: jekyll
