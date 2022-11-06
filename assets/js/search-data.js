@@ -1,18 +1,8 @@
 var store = [{
-        "title": "Jill",
-        "excerpt":"Jill is an avid fruit grower based in the south of France. ","categories": [],
-        "tags": [],
-        "url": "https://keszeitheone.github.io/authors/jill/"
-      },{
         "title": "Keszei",
         "excerpt":"Jill is an avid fruit grower based in the south of France. ","categories": [],
         "tags": [],
         "url": "https://keszeitheone.github.io/authors/keszei/"
-      },{
-        "title": "Ted",
-        "excerpt":"Ted has been eating fruit since he was baby. ","categories": [],
-        "tags": [],
-        "url": "https://keszeitheone.github.io/authors/ted/"
       },{
         "title": "Kiwifruit",
         "excerpt":"Kiwifruit (often abbreviated as kiwi), or Chinese gooseberry is the edibleberry of several species of woody vines in the genus Actinidia. The most common cultivar group of kiwifruit is oval, about the size of a largehen’s egg (5–8 cm (2.0–3.1 in) in length and 4.5–5.5 cm (1.8–2.2 in) indiameter). It...","categories": ["fruit"],
