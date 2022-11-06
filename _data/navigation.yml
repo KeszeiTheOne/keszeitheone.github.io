@@ -2,11 +2,11 @@
 
 - title: Home
   url: /
-- title: Posts
+- title: Bejegyzések
   url: /posts/
-- title: Categories
+- title: Kategóriák
   url: /categories/
-- title: Tags
+- title: Címkék
   url: /tags/
 # - title: Recipes
 #   url: /recipes/

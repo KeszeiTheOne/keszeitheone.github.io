@@ -1,5 +1,5 @@
 ---
-title: Tag Archive
+title: Címke Archívum
 layout: tags
 permalink: /tags/
 show_excerpts: true

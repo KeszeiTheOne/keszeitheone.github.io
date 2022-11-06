@@ -173,7 +173,7 @@ hu: &DEFAULT_HU
   min_read: "perc olvasás"
   read_more: "Tovább olvasom&hellip;"
   categories: "Kategóriák"
-  tags: "Tags"
+  tags: "Címkék"
   pages_categorized: "Pages filed under"
   pages_tagged: "Pages tagged"
   table_of_contents: "Table of Contents"

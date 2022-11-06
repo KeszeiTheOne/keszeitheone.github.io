@@ -1,5 +1,5 @@
 ---
-title: Category Archive
+title: Kategória Archívum
 layout: categories
 permalink: /categories/
 show_excerpts: true

@@ -2,7 +2,8 @@
 title: Initial commit
 category: general
 author: keszei
-image: assets/images/posts/initial_commit.jpg
+image:
+  path: assets/images/posts/initial_commit.jpg
 tags:
 - jekyll
 - blog
