@@ -10,7 +10,7 @@ var store = [{
         "url": "https://keszeitheone.github.io/general/initial-commit/"
       },{
         "title": "Mi az a TDD?",
-        "excerpt":"TDD, mint Test Driven Development. A jelenlegi munkahelyemen, ez egy fontos fejlesztési eszköz. Nagyon egyszerűen fogalmazva az alapelve, hogy először tesztet írunk és utána csak production kódot. A TDD fejlesztésnek 3 fő lépése van, ami folyamatosan körbe-körbe “hajtódik” végbe. Red Green RefactorRed lépés Először is mikor neki állunk egy algoritmus...","categories": ["general"],
+        "excerpt":"TDD, mint Test Driven Development. A jelenlegi munkahelyemen, ez egy fontos fejlesztési eszköz. Nagyon egyszerűen fogalmazva az alapelve, hogy először tesztet írunk és utána csak production kódot. A TDD fejlesztésnek 3 fő lépése van, ami folyamatosan körbe-körbe “hajtódik” végbe. Red Green RefactorRed lépés Először is mikor neki állunk egy algoritmus...","categories": ["development"],
         "tags": ["develop","work","tdd"],
-        "url": "https://keszeitheone.github.io/general/mi-az-a-tdd/"
+        "url": "https://keszeitheone.github.io/development/mi-az-a-tdd/"
       },]
