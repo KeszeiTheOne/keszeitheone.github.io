@@ -1,14 +1,119 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.1">Jekyll</generator><link href="https://keszeitheone.github.io/atom.xml" rel="self" type="application/atom+xml" /><link href="https://keszeitheone.github.io/" rel="alternate" type="text/html" /><updated>2022-11-07T10:12:59+01:00</updated><id>https://keszeitheone.github.io/atom.xml</id><title type="html">Keszei Blog</title><entry><title type="html">Initial commit</title><link href="https://keszeitheone.github.io/general/initial-commit/" rel="alternate" type="text/html" title="Initial commit" /><published>2022-11-06T00:00:00+01:00</published><updated>2022-11-06T00:00:00+01:00</updated><id>https://keszeitheone.github.io/general/initial-commit</id><content type="html" xml:base="https://keszeitheone.github.io/general/initial-commit/"><![CDATA[<p>Régebben mindig is próbálkoztam saját blogot írni, több kevesebb sikerrel.</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.1">Jekyll</generator><link href="https://keszeitheone.github.io/atom.xml" rel="self" type="application/atom+xml" /><link href="https://keszeitheone.github.io/" rel="alternate" type="text/html" /><updated>2022-11-07T22:52:50+01:00</updated><id>https://keszeitheone.github.io/atom.xml</id><title type="html">Keszei Blog</title><entry><title type="html">Lando, a web fejlesztők legjobb eszköze</title><link href="https://keszeitheone.github.io/development/lando-a-web-fejlesztk-legjobb-eszkoze/" rel="alternate" type="text/html" title="Lando, a web fejlesztők legjobb eszköze" /><published>2022-11-07T00:00:00+01:00</published><updated>2022-11-07T00:00:00+01:00</updated><id>https://keszeitheone.github.io/development/lando-a-web-fejlesztk-legjobb-eszkoze</id><content type="html" xml:base="https://keszeitheone.github.io/development/lando-a-web-fejlesztk-legjobb-eszkoze/"><![CDATA[<p>Folyamatosan kutakodom új technológiák után ami érdekes és hasznos is egyben. Web fejlesztéshez szükséges fejlesztői eszközök tárháza szinte végtelen és nagyon nehéz megtalálni a megfelelőt ami a te fejlesztési folyamataidhoz hozzá kapcsolódik.</p>
 
-<p>Most egy újjabb próbálkozást láttok, ami lehet, hogy dugába dől mint az előzőek is. Próbálkoztam twitterrel, blog.hu-val, saját bloggal stb.</p>
+<p>Mindig zavart, az hogy különböző projektek miatt váltani kell php, adatbázis valamint nodejs verziókat. Rengeteg idő ment el arra, mert valamit kifelejtettem és már nem úgy működött a rendszer ahogy kellene.</p>
 
-<p>Mivel web alkalmazás fejlesztő vagyok adott, hogy saját magamnak írjam meg a blogomat. A wordpress túl egyszerű választás lett volna. A wordperss-be az sem tetszik, hogy rá  vagyok kényszerítve a saját működésére. Nehéz a motorház tető alatt dolgozni. Az is lehet, hogy nem igazán értek hozzá, de nem akartam akkora energiát bele tolni.</p>
+<p>Úgy 1-2 évvel ezelőtt csináltam is magamnak docker segítségével egy jó kis fejlesztői szervert, minden projekthez külön-külön szerver, csak azokkal a beállításokkal ami a projekthez szükséges. Ezzel voltak kis problémák. Nehézkes volt egy új projekt felépítése. Nehéz volt egy kis szerver módosítást végezni rajta, mert minden egyes módositásnal újra le kell buildelni a docker image-et. Éltem ezzel egy ideig, de aztán meg találtam a szent grált miközben kutakodtam a <a href="https://ohmyz.sh/">zsh</a> pluginjai közt (zsh-ról tervezek máskor írni)</p>
 
-<p>Végül amit találtam az a <a href="https://jekyllrb.com/">jekyll</a>. Nagyon egyszerű a használata, ismerős template kezelő mechanizmusa van. A végső eredmény pedig egy sima html struktúra ami a legygyorsabb kiszolgálást eredményezi.</p>
+<p class="text-center bg-white p-3"><img src="/assets/images/posts/lando/logo.svg" alt="Lando" /></p>
 
-<p>Találtam is egy szép témát is hozzá. Kicsit módosítottam rajta, hogy végül csak egy javascript és egy css fájl betöltés legyen, hogy a végén kimaradjanak a cdn betöltések.</p>
+<h2 id="lando">Lando</h2>
+<p>Nem, nem a Star Wars Lando-ról van szó, habár én is pont emiatt figyeltem fel annó rá.</p>
 
-<p>Vannak még gondolataim arra, hogy mit szeretnék még írni, deegyenlőre ez a legelső posztom ezen az oldalon.</p>]]></content><author><name>Keszei Balázs</name></author><category term="general" /><category term="jekyll" /><category term="blog" /><summary type="html"><![CDATA[Régebben mindig is próbálkoztam saját blogot írni, több kevesebb sikerrel.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://keszeitheone.github.io/assets/images/posts/initial_commit.jpg" /><media:content medium="image" url="https://keszeitheone.github.io/assets/images/posts/initial_commit.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Mi az a TDD?</title><link href="https://keszeitheone.github.io/development/mi-az-a-tdd/" rel="alternate" type="text/html" title="Mi az a TDD?" /><published>2022-11-06T00:00:00+01:00</published><updated>2022-11-06T00:00:00+01:00</updated><id>https://keszeitheone.github.io/development/mi-az-a-tdd</id><content type="html" xml:base="https://keszeitheone.github.io/development/mi-az-a-tdd/"><![CDATA[<h2 id="tdd-mint-test-driven-development">TDD, mint Test Driven Development.</h2>
+<p class="text-center"><img src="/assets/images/posts/lando/not_starwars_lando.gif" alt="Not Star Wars Lando" /></p>
+
+<p>A Lando saját docker image-eket használ, de lehet egyedi saját image-t használni benne. Ez adja a báját, hogy végtelenségig lehet testreszabni. Alapja az, hogy van egy szerver ami futtatja a kódunkat. Lehet az apache, nginx vagy bármi amire szükséged van. Nem kell feltétlenül php specifikusnak lennie szervernek (Erről lesz később példa is).</p>
+
+<p>Kezdjük az elejéről. <a href="https://docs.lando.dev/getting-started/installation.html">Feltelepíted</a> a dokumentáció alapján. Innentől kezdve végig mehetsz egy egész egyszerű <a href="https://docs.lando.dev/getting-started/first-app.html">tutorialon</a> ahol bemutatják az alap működését ennek az eszköznek. Részletesen nem fogok kitérni, hogy hogyan is működik mélységeibe. Nekem most egy ismertető a célom.</p>
+
+<p>Ha a Lando segítségével akarom futtatni a projektemet mindig első körben megadom az feltételeket. A Landonak vannak <a href="https://docs.lando.dev/config/recipes.html">receptjei</a> az olyan alkalmazások futtatására ami elterjedtek, hogy még kényelmesebb legyen egy projekt futtatása. A példánkban nem fogok recepteket használni, mert azok használatával nem lehet belelátni, hogy mégis hogyan is működik ez az eszköz.</p>
+
+<p>Vegyünk egy symfony projektet. Mi kell alap esetben hozzá? Kell egy valamilyen szerver, mint például apache.  Ezt felvesszük  a <code class="language-plaintext highlighter-rouge">._lando.yml</code> fájlunkba a következő képpen:</p>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">name</span><span class="pi">:</span> <span class="s">demo</span>
+
+<span class="na">proxy</span><span class="pi">:</span>
+  <span class="na">appserver</span><span class="pi">:</span>
+    <span class="pi">-</span> <span class="s">demo.lndo.site</span>
+
+<span class="na">services</span><span class="pi">:</span>
+  <span class="na">appserver</span><span class="pi">:</span>
+    <span class="na">type</span><span class="pi">:</span> <span class="s">php:7.4</span>
+    <span class="na">webroot</span><span class="pi">:</span> <span class="s">./public</span>
+    <span class="na">ssl</span><span class="pi">:</span> <span class="no">true</span>
+</code></pre></div></div>
+
+<p>Ez után csak lekell futtatnunk a <code class="language-plaintext highlighter-rouge">lando start</code> parancsot és a folyamat végén el is érhető a projektünk. A Lando csinál local domaint, ssl-t mindent is. A projektünket a <a href="https://demo.lndo.site">https://demo.lndo.site</a> linken fogjuk tudni elérni.</p>
+
+<h2 id="tooling">Tooling</h2>
+<p>Ami még nagyon hasznos a Landoban, hogy a projekthez szükséges parancsokat nem kell a host gépeden futtatni, hanem egy egyszerű lépéssel már a docker containerbe futtathatod. Ezzel nem kell feltelepítve lennie semmilyen alkalmazásnak a gazdagépen. Elég ha a container-ben telepítjük fel őket egy direkt specifikus verzión. Tegyük fel én a projektemhez szeretnék <a href="https://yarnpkg.com/">yarn</a> package managert használni, de a gépemre nincs feltelepítve a NodeJS. Csupán ennyit kell módosítanom a konfiguráción:</p>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">name</span><span class="pi">:</span> <span class="s">demo</span>
+
+<span class="na">proxy</span><span class="pi">:</span>
+  <span class="na">appserver</span><span class="pi">:</span>
+    <span class="pi">-</span> <span class="s">demo.lndo.site</span>
+
+<span class="na">services</span><span class="pi">:</span>
+  <span class="na">appserver</span><span class="pi">:</span>
+    <span class="na">type</span><span class="pi">:</span> <span class="s">php:7.4</span>
+    <span class="na">webroot</span><span class="pi">:</span> <span class="s">./public</span>
+    <span class="na">ssl</span><span class="pi">:</span> <span class="no">true</span>
+    <span class="na">build_as_root</span><span class="pi">:</span>
+      <span class="pi">-</span> <span class="s">curl -fsSL https://deb.nodesource.com/setup_18.x | bash -</span>
+      <span class="pi">-</span> <span class="s">apt-get install -y nodejs</span>
+      <span class="pi">-</span> <span class="s">npm install --global yarn</span>
+
+<span class="na">tooling</span><span class="pi">:</span>
+  <span class="na">yarn</span><span class="pi">:</span>
+    <span class="na">service</span><span class="pi">:</span> <span class="s">appserver</span>
+    <span class="na">cmd</span><span class="pi">:</span> <span class="s">yarn</span>
+</code></pre></div></div>
+
+<p>Egy gyors <code class="language-plaintext highlighter-rouge">lando rebuild -y</code> parancs után már rendelkezésre is áll a projektünkben a yarn. Csupán a szokványos yarn parancsaink elé be kell szurnunk a <code class="language-plaintext highlighter-rouge">lando</code> parancsot, és onnantól kezdve a projektünk container-ében futtatja a scriptet amit akartunk, pl.: <code class="language-plaintext highlighter-rouge">lando yarn add vue</code>.</p>
+
+<p>A tooling parancsokat nagyon mélyre menőleg lehet testreszabni, mint ahogy a <a href="https://docs.lando.dev/config/tooling.html">dokumentáció</a> is írja.</p>
+
+<h3 id="végszó">Végszó</h3>
+
+<p>Szerintem alapjába véve ezek miatt nagyon erős tool a Lando. Csapatban még inkább ajánlatos használni, mert mindenkinek ugyan az a fejlesztői környezete lesz és az sokat számíthat. Én ma már ha új projektett kezdek el akkor csak Lando segítségével. Mint ahogy ezt a blogot is Landoval futtatom, mert nem akartam külön rengeteg mindent feltelepíteni, ahhoz hogy használni tudjam a Jekyll-t. Csak lehúztam a docker image-et és elindítottam. Alább meg is osztottam a jelenlegi változatát a blog Lando configjáról.</p>
+
+<p>Nagyon szépen köszönöm, hogy idáig elolvastad. Remélem meghoztam a kedved ennek a remek fejlesztői eszköznek a használatára.</p>
+
+<p>Tscháó! ;)</p>
+
+<p class="text-center"><img src="/assets/images/posts/lando/lando_bye.gif" alt="Lando bye" /></p>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">name</span><span class="pi">:</span> <span class="s">keszeiblog</span>
+
+<span class="na">proxy</span><span class="pi">:</span>
+  <span class="na">appserver</span><span class="pi">:</span>
+    <span class="pi">-</span> <span class="s">keszeiblog.lndo.site:4000</span>
+
+<span class="na">services</span><span class="pi">:</span>
+
+  <span class="na">appserver</span><span class="pi">:</span>
+    <span class="na">type</span><span class="pi">:</span> <span class="s">compose</span>
+    <span class="na">app_mount</span><span class="pi">:</span> <span class="no">false</span>
+    <span class="na">scanner</span><span class="pi">:</span> <span class="no">false</span>
+    <span class="na">ssl</span><span class="pi">:</span> <span class="no">true</span>
+    <span class="na">moreHttpPorts</span><span class="pi">:</span>
+      <span class="pi">-</span> <span class="s1">'</span><span class="s">4000'</span>
+    <span class="na">build_as_root</span><span class="pi">:</span>
+      <span class="pi">-</span> <span class="s">apk add nodejs npm</span>
+      <span class="pi">-</span> <span class="s">npm install --global yarn</span>
+    <span class="na">services</span><span class="pi">:</span>
+      <span class="na">image</span><span class="pi">:</span> <span class="s">jekyll/jekyll:4</span>
+      <span class="na">command</span><span class="pi">:</span> <span class="s">jekyll serve</span>
+      <span class="na">ports</span><span class="pi">:</span>
+        <span class="pi">-</span> <span class="s1">'</span><span class="s">4000'</span>
+      <span class="na">working_dir</span><span class="pi">:</span> <span class="s">/app</span>
+      <span class="na">environment</span><span class="pi">:</span>
+        <span class="na">JEKYLL_ENV</span><span class="pi">:</span> <span class="s">development</span>
+      <span class="na">volumes</span><span class="pi">:</span>
+        <span class="pi">-</span> <span class="s">$PWD:/app</span>
+
+<span class="na">tooling</span><span class="pi">:</span>
+
+  <span class="na">jekyll</span><span class="pi">:</span>
+    <span class="na">service</span><span class="pi">:</span> <span class="s">appserver</span>
+    <span class="na">command</span><span class="pi">:</span> <span class="s">jekyll</span>
+    <span class="na">user</span><span class="pi">:</span> <span class="s">jekyll</span>
+
+  <span class="na">yarn</span><span class="pi">:</span>
+    <span class="na">service</span><span class="pi">:</span> <span class="s">appserver</span>
+    <span class="na">cmd</span><span class="pi">:</span> <span class="s">yarn</span>
+    <span class="na">user</span><span class="pi">:</span> <span class="s">jekyll</span>
+</code></pre></div></div>]]></content><author><name>Keszei Balázs</name></author><category term="development" /><category term="develop" /><category term="work" /><category term="lando" /><category term="devops" /><category term="tutorial" /><summary type="html"><![CDATA[Folyamatosan kutakodom új technológiák után ami érdekes és hasznos is egyben. Web fejlesztéshez szükséges fejlesztői eszközök tárháza szinte végtelen és nagyon nehéz megtalálni a megfelelőt ami a te fejlesztési folyamataidhoz hozzá kapcsolódik.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://keszeitheone.github.io/assets/images/posts/lando/lando_masthead.jpg" /><media:content medium="image" url="https://keszeitheone.github.io/assets/images/posts/lando/lando_masthead.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Mi az a TDD?</title><link href="https://keszeitheone.github.io/development/mi-az-a-tdd/" rel="alternate" type="text/html" title="Mi az a TDD?" /><published>2022-11-06T00:00:00+01:00</published><updated>2022-11-06T00:00:00+01:00</updated><id>https://keszeitheone.github.io/development/mi-az-a-tdd</id><content type="html" xml:base="https://keszeitheone.github.io/development/mi-az-a-tdd/"><![CDATA[<h2 id="tdd-mint-test-driven-development">TDD, mint Test Driven Development.</h2>
 
 <p>A jelenlegi munkahelyemen, ez egy fontos fejlesztési eszköz. Nagyon egyszerűen fogalmazva az alapelve, hogy először tesztet írunk és utána csak production kódot.</p>
 
@@ -74,4 +179,14 @@
 
 <p>Majd az egésznek vége is van, hogy ha a végeredmény azt adja vissza amit szeretnénk akkor végeztünk is.</p>
 
-<p>Gratulálok, meg tanultad a TDD alapjait.</p>]]></content><author><name>Keszei Balázs</name></author><category term="development" /><category term="develop" /><category term="work" /><category term="tdd" /><summary type="html"><![CDATA[TDD, mint Test Driven Development. Egy gyors talpaló arról, hogy micsoda is ez.]]></summary></entry></feed>
+<p>Gratulálok, meg tanultad a TDD alapjait.</p>]]></content><author><name>Keszei Balázs</name></author><category term="development" /><category term="develop" /><category term="work" /><category term="tdd" /><summary type="html"><![CDATA[TDD, mint Test Driven Development. Egy gyors talpaló arról, hogy micsoda is ez.]]></summary></entry><entry><title type="html">Initial commit</title><link href="https://keszeitheone.github.io/general/initial-commit/" rel="alternate" type="text/html" title="Initial commit" /><published>2022-11-06T00:00:00+01:00</published><updated>2022-11-06T00:00:00+01:00</updated><id>https://keszeitheone.github.io/general/initial-commit</id><content type="html" xml:base="https://keszeitheone.github.io/general/initial-commit/"><![CDATA[<p>Régebben mindig is próbálkoztam saját blogot írni, több kevesebb sikerrel.</p>
+
+<p>Most egy újjabb próbálkozást láttok, ami lehet, hogy dugába dől mint az előzőek is. Próbálkoztam twitterrel, blog.hu-val, saját bloggal stb.</p>
+
+<p>Mivel web alkalmazás fejlesztő vagyok adott, hogy saját magamnak írjam meg a blogomat. A wordpress túl egyszerű választás lett volna. A wordperss-be az sem tetszik, hogy rá  vagyok kényszerítve a saját működésére. Nehéz a motorház tető alatt dolgozni. Az is lehet, hogy nem igazán értek hozzá, de nem akartam akkora energiát bele tolni.</p>
+
+<p>Végül amit találtam az a <a href="https://jekyllrb.com/">jekyll</a>. Nagyon egyszerű a használata, ismerős template kezelő mechanizmusa van. A végső eredmény pedig egy sima html struktúra ami a legygyorsabb kiszolgálást eredményezi.</p>
+
+<p>Találtam is egy szép témát is hozzá. Kicsit módosítottam rajta, hogy végül csak egy javascript és egy css fájl betöltés legyen, hogy a végén kimaradjanak a cdn betöltések.</p>
+
+<p>Vannak még gondolataim arra, hogy mit szeretnék még írni, deegyenlőre ez a legelső posztom ezen az oldalon.</p>]]></content><author><name>Keszei Balázs</name></author><category term="general" /><category term="jekyll" /><category term="blog" /><summary type="html"><![CDATA[Régebben mindig is próbálkoztam saját blogot írni, több kevesebb sikerrel.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://keszeitheone.github.io/assets/images/posts/initial_commit.jpg" /><media:content medium="image" url="https://keszeitheone.github.io/assets/images/posts/initial_commit.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>

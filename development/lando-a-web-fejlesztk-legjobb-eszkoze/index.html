@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<!--
+    So Simple Jekyll Theme 3.2.0
+    Copyright 2013-2019 Michael Rose - mademistakes.com | @mmistakes
+    Free for personal and commercial use under the MIT license
+    https://github.com/mmistakes/so-simple-theme/blob/master/LICENSE
+-->
+<html lang="en-US" class="no-js">
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/assets/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+
+  
+    
+    <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Lando, a web fejlesztők legjobb eszköze | Keszei Blog</title>
+<meta name="generator" content="Jekyll v4.3.1" />
+<meta property="og:title" content="Lando, a web fejlesztők legjobb eszköze" />
+<meta name="author" content="Keszei Balázs" />
+<meta property="og:locale" content="hu" />
+<meta name="description" content="Folyamatosan kutakodom új technológiák után ami érdekes és hasznos is egyben. Web fejlesztéshez szükséges fejlesztői eszközök tárháza szinte végtelen és nagyon nehéz megtalálni a megfelelőt ami a te fejlesztési folyamataidhoz hozzá kapcsolódik." />
+<meta property="og:description" content="Folyamatosan kutakodom új technológiák után ami érdekes és hasznos is egyben. Web fejlesztéshez szükséges fejlesztői eszközök tárháza szinte végtelen és nagyon nehéz megtalálni a megfelelőt ami a te fejlesztési folyamataidhoz hozzá kapcsolódik." />
+<link rel="canonical" href="https://keszeitheone.github.io/development/lando-a-web-fejlesztk-legjobb-eszkoze/" />
+<meta property="og:url" content="https://keszeitheone.github.io/development/lando-a-web-fejlesztk-legjobb-eszkoze/" />
+<meta property="og:site_name" content="Keszei Blog" />
+<meta property="og:image" content="https://keszeitheone.github.io/assets/images/posts/lando/lando_masthead.jpg" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2022-11-07T00:00:00+01:00" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta property="twitter:image" content="https://keszeitheone.github.io/assets/images/posts/lando/lando_masthead.jpg" />
+<meta property="twitter:title" content="Lando, a web fejlesztők legjobb eszköze" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Keszei Balázs"},"dateModified":"2022-11-07T00:00:00+01:00","datePublished":"2022-11-07T00:00:00+01:00","description":"Folyamatosan kutakodom új technológiák után ami érdekes és hasznos is egyben. Web fejlesztéshez szükséges fejlesztői eszközök tárháza szinte végtelen és nagyon nehéz megtalálni a megfelelőt ami a te fejlesztési folyamataidhoz hozzá kapcsolódik.","headline":"Lando, a web fejlesztők legjobb eszköze","image":{"thumbnail":"/assets/images/posts/lando/logo.svg","class":"bg-white p-3","url":"https://keszeitheone.github.io/assets/images/posts/lando/lando_masthead.jpg","@type":"imageObject"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://keszeitheone.github.io/development/lando-a-web-fejlesztk-legjobb-eszkoze/"},"url":"https://keszeitheone.github.io/development/lando-a-web-fejlesztk-legjobb-eszkoze/"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+  
+
+  <script>
+    /* Cut the mustard */
+    if ( 'querySelector' in document && 'addEventListener' in window ) {
+      document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + 'js';
+    }
+  </script>
+
+  <link rel="stylesheet" href="/assets/css/style.css">
+<!--  <link rel="stylesheet" href="/assets/css/skins/default.css">-->
+  <link rel="alternate" type="application/atom+xml" title="Keszei Blog" href="/atom.xml">
+<!-- start custom head snippets -->
+
+<!-- insert favicons. use http://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+</head>
+
+  <!--<script>-->
+<!--  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){-->
+<!--  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),-->
+<!--  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)-->
+<!--  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');-->
+
+<!--  ga('create', 'G-CNG97X4FM1', 'auto');-->
+<!--  ga('send', 'pageview');-->
+<!--</script>-->
+<!-- Google tag (gtag.js) --><!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-CNG97X4FM1"></script>
+<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+
+	gtag('config', 'G-CNG97X4FM1');
+</script>
+
+  <body class="layout--post  lando-a-web-fejlesztők-legjobb-eszköze">
+    <nav class="skip-links">
+  <h2 class="screen-reader-text">Skip links</h2>
+  <ul>
+    <li><a href="#primary-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    
+  <div class="navigation-wrapper">
+    <a href="#menu-toggle" id="menu-toggle">Menü</a>
+    <nav id="primary-nav" class="site-nav animated drop">
+      <ul><li><a href="/">Home</a></li><li><a href="/posts/">Bejegyzések</a></li><li><a href="/categories/">Kategóriák</a></li><li><a href="/tags/">Címkék</a></li></ul>
+    </nav>
+  </div><!-- /.navigation-wrapper -->
+
+
+    <header class="masthead">
+    <div class="wrap">
+        <a href="/" class="site-logo" rel="home" title="Keszei Blog">
+            <div class="site-logo-icon  animated fadeInDown">
+                <i class="fas fa-terminal "></i>
+            </div>
+            <!--        <img src="" class="site-logo-img animated fadeInDown" alt="Keszei Blog">-->
+        </a>
+        
+        
+    </div>
+</header><!-- /.masthead -->
+
+
+    <main id="main" class="main-content" aria-label="Content">
+  <article class="h-entry">
+    
+  
+  
+  
+  
+
+  <div class="page-image">
+    <img src="/assets/images/posts/lando/lando_masthead.jpg" class="entry-feature-image u-photo bg-white p-3" alt="Lando, a web fejlesztők legjobb eszköze" style="margin-top: 0;">
+    
+  </div>
+
+
+    <div class="page-wrapper">
+      <header class="page-header">
+        
+        
+          <h1 id="page-title" class="page-title p-name">Lando, a web fejlesztők legjobb eszköze
+</h1>
+        
+      </header>
+
+      <div class="page-sidebar">
+        <div class="page-author h-card p-author"><img src="/assets/images/authors/keszei.png" class="author-avatar u-photo " alt="Keszei Balázs"><div class="author-info"><div class="author-name">
+        <em>Készítette:</em> <a href="/authors/keszei" class="u-url" rel="me">
+            <span class="p-name">Keszei Balázs</span>
+          </a></div><ul class="author-links"><li class="author-link">
+            <a class="u-url" rel="me" href="https://twitter.com/keszeitheone"><i class="fab fa-twitter fa-lg" title="Twitter"></i></a>
+          </li><li class="author-link">
+            <a class="u-url" rel="me" href="https://github.com/KeszeiTheOne"><i class="fab fa-github fa-lg" title="GitHub"></i></a>
+          </li></ul>
+
+<span class="read-time">3 perc olvasás</span>
+
+    <time class="page-date dt-published" datetime="2022-11-07T00:00:00+01:00"><a class="u-url" href="">2022-11-07</a>
+</time>
+
+  </div>
+</div>
+
+        
+  <h3 class="page-taxonomies-title">Kategóriák</h3>
+  <ul class="page-taxonomies"><li class="page-taxonomy">development</li>
+  </ul>
+
+
+        
+  <h3 class="page-taxonomies-title">Címkék</h3>
+  <ul class="page-taxonomies"><li class="page-taxonomy">develop</li><li class="page-taxonomy">work</li><li class="page-taxonomy">lando</li><li class="page-taxonomy">devops</li><li class="page-taxonomy">tutorial</li>
+  </ul>
+
+
+      </div>
+
+      <div class="page-content">
+        <div class="e-content">
+          <p>Folyamatosan kutakodom új technológiák után ami érdekes és hasznos is egyben. Web fejlesztéshez szükséges fejlesztői eszközök tárháza szinte végtelen és nagyon nehéz megtalálni a megfelelőt ami a te fejlesztési folyamataidhoz hozzá kapcsolódik.</p>
+
+<p>Mindig zavart, az hogy különböző projektek miatt váltani kell php, adatbázis valamint nodejs verziókat. Rengeteg idő ment el arra, mert valamit kifelejtettem és már nem úgy működött a rendszer ahogy kellene.</p>
+
+<p>Úgy 1-2 évvel ezelőtt csináltam is magamnak docker segítségével egy jó kis fejlesztői szervert, minden projekthez külön-külön szerver, csak azokkal a beállításokkal ami a projekthez szükséges. Ezzel voltak kis problémák. Nehézkes volt egy új projekt felépítése. Nehéz volt egy kis szerver módosítást végezni rajta, mert minden egyes módositásnal újra le kell buildelni a docker image-et. Éltem ezzel egy ideig, de aztán meg találtam a szent grált miközben kutakodtam a <a href="https://ohmyz.sh/">zsh</a> pluginjai közt (zsh-ról tervezek máskor írni)</p>
+
+<p class="text-center bg-white p-3"><img src="/assets/images/posts/lando/logo.svg" alt="Lando" /></p>
+
+<h2 id="lando">Lando</h2>
+<p>Nem, nem a Star Wars Lando-ról van szó, habár én is pont emiatt figyeltem fel annó rá.</p>
+
+<p class="text-center"><img src="/assets/images/posts/lando/not_starwars_lando.gif" alt="Not Star Wars Lando" /></p>
+
+<p>A Lando saját docker image-eket használ, de lehet egyedi saját image-t használni benne. Ez adja a báját, hogy végtelenségig lehet testreszabni. Alapja az, hogy van egy szerver ami futtatja a kódunkat. Lehet az apache, nginx vagy bármi amire szükséged van. Nem kell feltétlenül php specifikusnak lennie szervernek (Erről lesz később példa is).</p>
+
+<p>Kezdjük az elejéről. <a href="https://docs.lando.dev/getting-started/installation.html">Feltelepíted</a> a dokumentáció alapján. Innentől kezdve végig mehetsz egy egész egyszerű <a href="https://docs.lando.dev/getting-started/first-app.html">tutorialon</a> ahol bemutatják az alap működését ennek az eszköznek. Részletesen nem fogok kitérni, hogy hogyan is működik mélységeibe. Nekem most egy ismertető a célom.</p>
+
+<p>Ha a Lando segítségével akarom futtatni a projektemet mindig első körben megadom az feltételeket. A Landonak vannak <a href="https://docs.lando.dev/config/recipes.html">receptjei</a> az olyan alkalmazások futtatására ami elterjedtek, hogy még kényelmesebb legyen egy projekt futtatása. A példánkban nem fogok recepteket használni, mert azok használatával nem lehet belelátni, hogy mégis hogyan is működik ez az eszköz.</p>
+
+<p>Vegyünk egy symfony projektet. Mi kell alap esetben hozzá? Kell egy valamilyen szerver, mint például apache.  Ezt felvesszük  a <code class="language-plaintext highlighter-rouge">._lando.yml</code> fájlunkba a következő képpen:</p>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">name</span><span class="pi">:</span> <span class="s">demo</span>
+
+<span class="na">proxy</span><span class="pi">:</span>
+  <span class="na">appserver</span><span class="pi">:</span>
+    <span class="pi">-</span> <span class="s">demo.lndo.site</span>
+
+<span class="na">services</span><span class="pi">:</span>
+  <span class="na">appserver</span><span class="pi">:</span>
+    <span class="na">type</span><span class="pi">:</span> <span class="s">php:7.4</span>
+    <span class="na">webroot</span><span class="pi">:</span> <span class="s">./public</span>
+    <span class="na">ssl</span><span class="pi">:</span> <span class="no">true</span>
+</code></pre></div></div>
+
+<p>Ez után csak lekell futtatnunk a <code class="language-plaintext highlighter-rouge">lando start</code> parancsot és a folyamat végén el is érhető a projektünk. A Lando csinál local domaint, ssl-t mindent is. A projektünket a <a href="https://demo.lndo.site">https://demo.lndo.site</a> linken fogjuk tudni elérni.</p>
+
+<h2 id="tooling">Tooling</h2>
+<p>Ami még nagyon hasznos a Landoban, hogy a projekthez szükséges parancsokat nem kell a host gépeden futtatni, hanem egy egyszerű lépéssel már a docker containerbe futtathatod. Ezzel nem kell feltelepítve lennie semmilyen alkalmazásnak a gazdagépen. Elég ha a container-ben telepítjük fel őket egy direkt specifikus verzión. Tegyük fel én a projektemhez szeretnék <a href="https://yarnpkg.com/">yarn</a> package managert használni, de a gépemre nincs feltelepítve a NodeJS. Csupán ennyit kell módosítanom a konfiguráción:</p>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">name</span><span class="pi">:</span> <span class="s">demo</span>
+
+<span class="na">proxy</span><span class="pi">:</span>
+  <span class="na">appserver</span><span class="pi">:</span>
+    <span class="pi">-</span> <span class="s">demo.lndo.site</span>
+
+<span class="na">services</span><span class="pi">:</span>
+  <span class="na">appserver</span><span class="pi">:</span>
+    <span class="na">type</span><span class="pi">:</span> <span class="s">php:7.4</span>
+    <span class="na">webroot</span><span class="pi">:</span> <span class="s">./public</span>
+    <span class="na">ssl</span><span class="pi">:</span> <span class="no">true</span>
+    <span class="na">build_as_root</span><span class="pi">:</span>
+      <span class="pi">-</span> <span class="s">curl -fsSL https://deb.nodesource.com/setup_18.x | bash -</span>
+      <span class="pi">-</span> <span class="s">apt-get install -y nodejs</span>
+      <span class="pi">-</span> <span class="s">npm install --global yarn</span>
+
+<span class="na">tooling</span><span class="pi">:</span>
+  <span class="na">yarn</span><span class="pi">:</span>
+    <span class="na">service</span><span class="pi">:</span> <span class="s">appserver</span>
+    <span class="na">cmd</span><span class="pi">:</span> <span class="s">yarn</span>
+</code></pre></div></div>
+
+<p>Egy gyors <code class="language-plaintext highlighter-rouge">lando rebuild -y</code> parancs után már rendelkezésre is áll a projektünkben a yarn. Csupán a szokványos yarn parancsaink elé be kell szurnunk a <code class="language-plaintext highlighter-rouge">lando</code> parancsot, és onnantól kezdve a projektünk container-ében futtatja a scriptet amit akartunk, pl.: <code class="language-plaintext highlighter-rouge">lando yarn add vue</code>.</p>
+
+<p>A tooling parancsokat nagyon mélyre menőleg lehet testreszabni, mint ahogy a <a href="https://docs.lando.dev/config/tooling.html">dokumentáció</a> is írja.</p>
+
+<h3 id="végszó">Végszó</h3>
+
+<p>Szerintem alapjába véve ezek miatt nagyon erős tool a Lando. Csapatban még inkább ajánlatos használni, mert mindenkinek ugyan az a fejlesztői környezete lesz és az sokat számíthat. Én ma már ha új projektett kezdek el akkor csak Lando segítségével. Mint ahogy ezt a blogot is Landoval futtatom, mert nem akartam külön rengeteg mindent feltelepíteni, ahhoz hogy használni tudjam a Jekyll-t. Csak lehúztam a docker image-et és elindítottam. Alább meg is osztottam a jelenlegi változatát a blog Lando configjáról.</p>
+
+<p>Nagyon szépen köszönöm, hogy idáig elolvastad. Remélem meghoztam a kedved ennek a remek fejlesztői eszköznek a használatára.</p>
+
+<p>Tscháó! ;)</p>
+
+<p class="text-center"><img src="/assets/images/posts/lando/lando_bye.gif" alt="Lando bye" /></p>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">name</span><span class="pi">:</span> <span class="s">keszeiblog</span>
+
+<span class="na">proxy</span><span class="pi">:</span>
+  <span class="na">appserver</span><span class="pi">:</span>
+    <span class="pi">-</span> <span class="s">keszeiblog.lndo.site:4000</span>
+
+<span class="na">services</span><span class="pi">:</span>
+
+  <span class="na">appserver</span><span class="pi">:</span>
+    <span class="na">type</span><span class="pi">:</span> <span class="s">compose</span>
+    <span class="na">app_mount</span><span class="pi">:</span> <span class="no">false</span>
+    <span class="na">scanner</span><span class="pi">:</span> <span class="no">false</span>
+    <span class="na">ssl</span><span class="pi">:</span> <span class="no">true</span>
+    <span class="na">moreHttpPorts</span><span class="pi">:</span>
+      <span class="pi">-</span> <span class="s1">'</span><span class="s">4000'</span>
+    <span class="na">build_as_root</span><span class="pi">:</span>
+      <span class="pi">-</span> <span class="s">apk add nodejs npm</span>
+      <span class="pi">-</span> <span class="s">npm install --global yarn</span>
+    <span class="na">services</span><span class="pi">:</span>
+      <span class="na">image</span><span class="pi">:</span> <span class="s">jekyll/jekyll:4</span>
+      <span class="na">command</span><span class="pi">:</span> <span class="s">jekyll serve</span>
+      <span class="na">ports</span><span class="pi">:</span>
+        <span class="pi">-</span> <span class="s1">'</span><span class="s">4000'</span>
+      <span class="na">working_dir</span><span class="pi">:</span> <span class="s">/app</span>
+      <span class="na">environment</span><span class="pi">:</span>
+        <span class="na">JEKYLL_ENV</span><span class="pi">:</span> <span class="s">development</span>
+      <span class="na">volumes</span><span class="pi">:</span>
+        <span class="pi">-</span> <span class="s">$PWD:/app</span>
+
+<span class="na">tooling</span><span class="pi">:</span>
+
+  <span class="na">jekyll</span><span class="pi">:</span>
+    <span class="na">service</span><span class="pi">:</span> <span class="s">appserver</span>
+    <span class="na">command</span><span class="pi">:</span> <span class="s">jekyll</span>
+    <span class="na">user</span><span class="pi">:</span> <span class="s">jekyll</span>
+
+  <span class="na">yarn</span><span class="pi">:</span>
+    <span class="na">service</span><span class="pi">:</span> <span class="s">appserver</span>
+    <span class="na">cmd</span><span class="pi">:</span> <span class="s">yarn</span>
+    <span class="na">user</span><span class="pi">:</span> <span class="s">jekyll</span>
+</code></pre></div></div>
+
+        </div>
+
+        
+          <div class="page-share">
+  <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fkeszeitheone.github.io%2Fdevelopment%2Flando-a-web-fejlesztk-legjobb-eszkoze%2F" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" class="btn btn--facebook btn--small"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i> <span>Megosztás</span></a>
+  <a href="https://twitter.com/intent/tweet?text=Lando%2C+a+web+fejleszt%C5%91k+legjobb+eszk%C3%B6ze%20https%3A%2F%2Fkeszeitheone.github.io%2Fdevelopment%2Flando-a-web-fejlesztk-legjobb-eszkoze%2F" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" class="btn btn--twitter btn--small"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i> <span>Tweet</span></a>
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fkeszeitheone.github.io%2Fdevelopment%2Flando-a-web-fejlesztk-legjobb-eszkoze%2F" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" class="btn btn--linkedin btn--small"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i> <span>LinkedIn</span></a>
+  <a href="https://reddit.com/submit?title=Lando%2C+a+web+fejleszt%C5%91k+legjobb+eszk%C3%B6ze&url=https%3A%2F%2Fkeszeitheone.github.io%2Fdevelopment%2Flando-a-web-fejlesztk-legjobb-eszkoze%2F" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" class="btn btn--reddit btn--small"><i class="fab fa-fw fa-reddit" aria-hidden="true"></i> <span>Reddit</span></a>
+</div>
+
+        
+
+        
+          
+  <div class="page-comments">
+    <div id="disqus_thread"></div>
+    <script>
+      var disqus_config = function () {
+        this.page.url = 'https://keszeitheone.github.io/development/lando-a-web-fejlesztk-legjobb-eszkoze/';
+        this.page.identifier = 'https://keszeitheone.github.io/development/lando-a-web-fejlesztk-legjobb-eszkoze/';
+      };
+
+      (function() {
+        var d = document, s = d.createElement('script');
+        s.src = 'https://https-keszeitheone-github-io.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+  </div>
+
+
+        
+
+        <nav class="page-pagination" role="navigation">
+  
+    <a class="page-previous" href="/development/mi-az-a-tdd/">
+      <h4 class="page-pagination-label">Előző</h4>
+      <span class="page-pagination-title">
+        <i class="fas fa-arrow-left"></i> Mi az a TDD?
+
+      </span>
+    </a>
+  
+
+  
+</nav>
+
+      </div>
+    </div>
+  </article>
+</main>
+
+
+    <footer id="footer" class="site-footer">
+  <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+<div class="social-icons"><a class="social-icon" href="https://twitter.com/keszeitheone"><i class="fab fa-twitter-square fa-2x" title="Twitter"></i></a><a class="social-icon" href="https://github.com/KeszeiTheOne"><i class="fab fa-github-square fa-2x" title="GitHub"></i></a><a class="social-icon" href="/atom.xml"><i class="fas fa-rss-square fa-2x" title="Feed"></i></a></div><div class="copyright">
+    
+      <p>&copy; 2022 Keszei Blog. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://github.com/mmistakes/so-simple-theme" rel="nofollow">So Simple</a>.</p>
+    
+  </div>
+</footer>
+
+    <!--  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>-->
+<!--  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>-->
+  <script src="/assets/js/main-build.js"></script>
+<!--  <script src="https://use.fontawesome.com/releases/v5.0.12/js/all.js"></script>--><!--<script async src="https://www.googletagmanager.com/gtag/js?id=G-CNG97X4FM1"></script>-->
+<!--<script>-->
+<!--  window.dataLayer = window.dataLayer || [];-->
+<!--  function gtag(){dataLayer.push(arguments);}-->
+<!--  gtag('js', new Date());-->
+
+<!--  gtag('config', 'G-CNG97X4FM1');-->
+<!--  gtag('create', 'G-CNG97X4FM1', 'auto');-->
+<!--  gtag('send', 'pageview');-->
+<!--</script>-->
+<!--  <script>-->
+<!--  if(!(window.doNotTrack === "1" || navigator.doNotTrack === "1" || navigator.doNotTrack === "yes" || navigator.msDoNotTrack === "1")) {-->
+<!--    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){-->
+<!--    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),-->
+<!--    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)-->
+<!--    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');-->
+<!--    ga('create', 'G-CNG97X4FM1', 'auto');-->
+<!--    ga('send', 'pageview');-->
+<!--  }-->
+<!--  </script>-->
+
+
+  </body>
+
+</html>
