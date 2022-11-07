@@ -1,5 +1,8 @@
 {% assign posts_limit = page.posts_limit | default: 10 %}
 
 {%- for entry in site.posts limit: posts_limit -%}
+  {% if forloop.first == false %}
+  <hr/>
+  {% endif %}
   {% include entry.html %}
 {%- endfor -%}

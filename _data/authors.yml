@@ -9,4 +9,7 @@ keszei:
   links:
     - title: Twitter
       url: https://twitter.com/keszeitheone
-      icon: fab fa-twitter-square
+      icon: fab fa-twitter
+    - title: GitHub
+      url: https://github.com/KeszeiTheOne
+      icon: fab fa-github

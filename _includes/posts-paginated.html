@@ -1,4 +1,7 @@
 {%- for entry in paginator.posts -%}
+  {% if forloop.first == false %}
+  <hr/>
+  {% endif %}
   {% include entry.html %}
 {%- endfor -%}
 
