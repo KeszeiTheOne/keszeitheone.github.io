@@ -1,3 +1,6 @@
 {%- for entry in site.categories[include.taxonomy] -%}
+  {% if forloop.first == false %}
+  <hr/>
+  {% endif %}
   {% include entry.html %}
 {%- endfor -%}

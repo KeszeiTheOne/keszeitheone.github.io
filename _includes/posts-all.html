@@ -1,3 +1,6 @@
 {%- for entry in site.posts -%}
+  {% if forloop.first == false %}
+  <hr/>
+  {% endif %}
   {% include entry.html %}
 {%- endfor -%}

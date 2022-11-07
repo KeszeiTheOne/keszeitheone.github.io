@@ -21,6 +21,9 @@ layout: page
     <h2 class="taxonomy-title">{{ year.name }}</h2>
     <div class="entries-{{ page.entries_layout | default: 'list' }}">
       {% for entry in year.items %}
+        {% if forloop.first == false %}
+        <hr/>
+        {% endif %}
         {% include entry.html %}
       {% endfor %}
     </div>
