@@ -14,6 +14,8 @@ date_format: "%Y-%m-%d"
 paginate: 10  # amount of posts to show per page
 paginate_path: /page:num/
 google_analytics: G-CNG97X4FM1
+disqus:
+  shortname: keszeiblog
 
 # Build settings
 permalink: /:categories/:title/

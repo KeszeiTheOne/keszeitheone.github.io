@@ -15,11 +15,12 @@
     </h3>
     {% if entry.image.thumbnail %}
       {% assign entry_image = entry.image.thumbnail %}
+      {% assign image_class = entry.image.class | default: '' %}
       {% unless entry_image contains '://' %}
         {% assign entry_image = entry_image | relative_url %}
       {% endunless %}
       {% assign entry_image = entry_image | escape %}
-      <img class="entry-image u-photo" src="{{ entry_image }}" alt="">
+      <img class="entry-image u-photo {{ image_class }}" src="{{ entry_image }}" alt="">
     {% endif %}
   </header>
   {% unless page.show_excerpts == false %}
