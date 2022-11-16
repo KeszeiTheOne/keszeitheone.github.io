@@ -18,4 +18,9 @@ var store = [{
         "excerpt":"Folyamatosan kutakodom új technológiák után ami érdekes és hasznos is egyben. Web fejlesztéshez szükséges fejlesztői eszközök tárháza szinte végtelen és nagyon nehéz megtalálni a megfelelőt ami a te fejlesztési folyamataidhoz hozzá kapcsolódik. Mindig zavart, az hogy különböző projektek miatt váltani kell php, adatbázis valamint nodejs verziókat. Rengeteg idő ment el...","categories": ["development"],
         "tags": ["develop","work","lando","devops","tutorial"],
         "url": "https://keszeitheone.github.io/development/lando-a-web-fejlesztk-legjobb-eszkoze/"
+      },{
+        "title": "Dolgozz hobbi projekten!",
+        "excerpt":"Kifejezetten a programozás részére gondolok. Ha vannak a szakmán kívül hobbijaid az kiváló, csak így tovább. Azért még maradj,lehet, hogy téged is érdekelhet ez a bejegyzés. Már milliónyi hobbi projekt van a hátam mögött. Ezért merem ajánlani, hogy kezdj bele te is. Nem kell félni attól, hogy hülyeség az ötleted,...","categories": ["discussion"],
+        "tags": ["develop","hobbi","ideas","talking"],
+        "url": "https://keszeitheone.github.io/discussion/dolgozz-hobbi-projekten/"
       },]
