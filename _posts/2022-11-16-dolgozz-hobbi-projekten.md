@@ -8,6 +8,9 @@ tags:
 - hobbi
 - ideas
 - talking
+image:
+  path: assets/images/posts/hobbiprojekt/heading.png
+  thumbnail: assets/images/posts/hobbiprojekt/thumbnail.png
 ---
 
 Kifejezetten a programozás részére gondolok. Ha vannak a szakmán kívül hobbijaid az kiváló, csak így tovább.  Azért még maradj,lehet, hogy téged is érdekelhet ez a bejegyzés.
